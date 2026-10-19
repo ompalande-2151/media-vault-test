@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function IssueCover({
   issue,
 }: {
@@ -5,12 +7,14 @@ export function IssueCover({
 }) {
   return (
     <div className="issue-cover">
-      <img
+      <Image
         src={issue.image}
         alt={`${issue.month} ${issue.year} illustrated magazine cover`}
         width={320}
         height={440}
         loading="lazy"
+        sizes="320px"
+        quality={80}
       />
       <div className="issue-cover-text">
         <strong>

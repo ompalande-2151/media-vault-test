@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Article } from "@/lib/types";
 import { getCategory } from "@/lib/queries";
 import { getArticleCanonicalPath } from "@/lib/seo";
@@ -14,7 +15,15 @@ export function StoryCard({
   return (
     <article className="story-card">
       <Link href={href} className="story-image">
-        <img src={article.image} alt={article.alt} width={640} height={400} loading="lazy" />
+        <Image
+          src={article.image}
+          alt={article.alt}
+          width={640}
+          height={376}
+          loading="lazy"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+          quality={75}
+        />
       </Link>
       <span className="eyebrow">{getCategory(article.category)?.name}</span>
       <h3>

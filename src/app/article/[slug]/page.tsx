@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
 import { getArticle, getArticles, getCategory, getAuthor, subSlug } from "@/lib/queries";
@@ -123,13 +124,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <ShareButton />
           </div>
         </div>
-        <img
+        <Image
           src={a.image}
           alt={a.alt}
           className="article-hero"
-          width={1920}
-          height={1024}
-          fetchPriority="high"
+          width={1200}
+          height={640}
+          priority
+          sizes="(max-width: 1200px) 100vw, 1200px"
+          quality={80}
         />
         <p className="article-caption">
           {a.alt} · {a.disclosure} preview.

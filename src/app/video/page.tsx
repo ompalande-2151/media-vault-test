@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { getVideos } from "@/lib/queries";
 import { createMetadata } from "@/lib/seo";
@@ -49,11 +50,14 @@ export default function VideoIndexPage() {
           {videos.map((v) => (
             <article className="story-card" key={v.slug}>
               <Link href={`/video/${v.slug}`} className="story-image">
-                <img
+                <Image
                   src={v.image}
                   alt="Illustrative CEO Voice conversation"
-                  width={1024}
-                  height={600}
+                  width={640}
+                  height={376}
+                  loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+                  quality={75}
                 />
               </Link>
               <span className="eyebrow">{v.series} · Preview</span>

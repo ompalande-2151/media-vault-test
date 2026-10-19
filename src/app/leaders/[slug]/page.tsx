@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getLeader, getLeaders, getArticle } from "@/lib/queries";
 import { createMetadata, createNotFoundMetadata } from "@/lib/seo";
@@ -51,11 +52,14 @@ export default async function LeaderPage({ params }: { params: Promise<{ slug: s
         </p>
       </div>
       <div className="spotlight mb-12">
-        <img
+        <Image
           src={l.image}
           alt={`Editorial portrait of ${l.name}, ${l.role} at ${l.company}`}
-          width={1024}
-          height={1024}
+          width={640}
+          height={492}
+          priority
+          sizes="(max-width: 768px) 100vw, 450px"
+          quality={80}
         />
         <div>
           <span className="eyebrow">People. Purpose. Possibility.</span>

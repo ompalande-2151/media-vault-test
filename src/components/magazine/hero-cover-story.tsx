@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { HeroStoryItem } from "@/lib/queries";
@@ -14,6 +15,11 @@ interface HeroCoverStoryProps {
 
 export function HeroCoverStory({ items, intervalMs = 5000 }: HeroCoverStoryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   // Auto-rotation timer that never pauses on hover
   useEffect(() => {
@@ -36,14 +42,20 @@ export function HeroCoverStory({ items, intervalMs = 5000 }: HeroCoverStoryProps
       {/* Background Images with smooth crossfade */}
       {items.map((item, idx) => {
         const isActive = idx === activeIndex;
+        // Render slide 0 on initial SSR/HTML, and defer remaining slides until after mount
+        if (idx !== 0 && !hasMounted) {
+          return null;
+        }
+
         return (
-          <img
+          <Image
             key={item.categorySlug}
             src={item.article.image}
             alt={item.article.alt || item.article.headline}
-            width={1920}
-            height={1024}
-            fetchPriority={idx === 0 ? "high" : "low"}
+            fill
+            priority={idx === 0}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 1100px"
+            quality={80}
             className={`cover-story-bg absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out pointer-events-none ${
               isActive ? "opacity-100 z-0" : "opacity-0 -z-10"
             }`}

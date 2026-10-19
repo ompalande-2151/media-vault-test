@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -29,11 +30,14 @@ export function VideoPlayer({
 
   return (
     <div className="video-poster max-w-4xl">
-      <img
+      <Image
         src={image}
         alt="AI-generated illustrative leadership portrait"
-        width={1024}
-        height={600}
+        width={896}
+        height={528}
+        priority
+        sizes="(max-width: 896px) 100vw, 896px"
+        quality={80}
       />
       <Button
         variant="cover"

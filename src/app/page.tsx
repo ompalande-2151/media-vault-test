@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ArrowUpRight, Building2, TrendingUp, Lightbulb, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { StoryCard } from "@/components/magazine/story-card";
@@ -131,12 +132,14 @@ export default function HomePage() {
           </div>
           <div className="spotlight">
             <Link href={`/leaders/${leader.slug}`}>
-              <img
+              <Image
                 src={leader.image}
                 alt="Illustrative portrait of fictional founder Ananya Rao"
-                width={1024}
-                height={1024}
+                width={640}
+                height={492}
                 loading="lazy"
+                sizes="(max-width: 768px) 100vw, 450px"
+                quality={80}
               />
             </Link>
             <div>
@@ -205,12 +208,14 @@ export default function HomePage() {
           </div>
           <div className="video-grid">
             <Link href={`/video/${video.slug}`} className="video-poster">
-              <img
+              <Image
                 src={video.image}
                 alt="Illustrative CEO Voice portrait"
-                width={1024}
-                height={600}
+                width={800}
+                height={470}
                 loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                quality={80}
               />
               <Button asChild variant="cover" className="video-play">
                 <span>

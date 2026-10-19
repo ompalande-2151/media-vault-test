@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans, Spectral } from "next/font/google";
 import { Header, Footer } from "@/components/magazine/site-shell";
 import "@/styles.css";
 import { SITE_CONFIG, toAbsoluteUrl } from "@/lib/seo";
 import { getOrganizationJsonLd, getWebsiteJsonLd, safeJsonLd } from "@/lib/structured-data";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-sans-google",
+  display: "swap",
+});
+
+const spectral = Spectral({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  style: ["normal", "italic"],
+  variable: "--font-editorial-google",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.siteUrl),
@@ -59,16 +75,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const websiteJsonLd = getWebsiteJsonLd();
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${plusJakartaSans.variable} ${spectral.variable}`}>
       <head>
         <link rel="icon" href="/assets/ICON - MVGM.png" type="image/png" />
         <link rel="apple-touch-icon" href="/assets/ICON - MVGM.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;1,400&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: safeJsonLd(organizationJsonLd) }}

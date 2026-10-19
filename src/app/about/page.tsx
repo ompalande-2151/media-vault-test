@@ -5,10 +5,13 @@ import { createMetadata } from "@/lib/seo";
 import { Newsletter } from "@/components/magazine/newsletter";
 import { AboutNav } from "@/components/magazine/about-nav";
 
-export const metadata: Metadata = createMetadata(
-  "About MediaVault Global: India-First Business Magazine",
-  "MediaVault Global is an India-first, global-ready business magazine covering enterprise, leadership, MSMEs and founders with verified reporting.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "About MediaVault Global: India-First Business Magazine",
+  description:
+    "MediaVault Global is an India-first, global-ready business magazine covering enterprise, leadership, MSMEs and founders with verified reporting.",
+  canonicalPath: "/about",
+  ogType: "website",
+});
 
 const COVERAGE_AREAS = [
   {
@@ -61,10 +64,9 @@ export default function AboutPage() {
           <span className="eyebrow">About MediaVault Global</span>
           <h1>A Business Magazine for the People Who Build</h1>
           <p className="mx-auto">
-            MediaVault Global covers the businesses that make, move and finance things:
-            factories in industrial estates, founders in their first office, CEOs running
-            complex organisations and the policies that shape them. We start in India and
-            write for a global reader.
+            MediaVault Global covers the businesses that make, move and finance things: factories in
+            industrial estates, founders in their first office, CEOs running complex organisations
+            and the policies that shape them. We start in India and write for a global reader.
           </p>
         </div>
 
@@ -75,15 +77,14 @@ export default function AboutPage() {
           <section className="prose-page max-w-3xl mx-auto text-center">
             <h2>Our Publishing Philosophy</h2>
             <p className="text-lg leading-relaxed text-foreground font-normal">
-              We publish practical analysis, profiles and guides. We verify our numbers,
-              label our content clearly and keep our design clean enough to read on a phone
-              between meetings.
+              We publish practical analysis, profiles and guides. We verify our numbers, label our
+              content clearly and keep our design clean enough to read on a phone between meetings.
             </p>
             <div className="publisher-notice text-left">
               <div>
                 <strong>Publisher Note:</strong> This site preview displays illustrative sample
-                articles, photography, and issues. Verified reporting and final editorial assets
-                are populated upon official release.
+                articles, photography, and issues. Verified reporting and final editorial assets are
+                populated upon official release.
               </div>
             </div>
           </section>
@@ -130,8 +131,8 @@ export default function AboutPage() {
                   </h3>
                 </div>
                 <p>
-                  How we verify facts, label content transparently, and separate editorial
-                  coverage from commercial sponsorships.
+                  How we verify facts, label content transparently, and separate editorial coverage
+                  from commercial sponsorships.
                 </p>
               </Link>
 

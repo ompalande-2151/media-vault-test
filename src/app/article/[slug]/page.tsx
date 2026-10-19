@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
-import { getArticle, getArticles, getCategory, getAuthor } from "@/lib/queries";
-import { createMetadata } from "@/lib/seo";
+import { getArticle, getArticles, getCategory, getAuthor, subSlug } from "@/lib/queries";
+import { createMetadata, createNotFoundMetadata, getArticleCanonicalPath } from "@/lib/seo";
+import { getArticleJsonLd, getBreadcrumbJsonLd, safeJsonLd } from "@/lib/structured-data";
 import { StoryCard } from "@/components/magazine/story-card";
 import { Newsletter } from "@/components/magazine/newsletter";
 import { ShareButton } from "./share-button";
@@ -19,12 +20,37 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const article = getArticle(slug);
-  if (!article)
-    return createMetadata("Story unavailable", "Discover business stories on MediaVault Global.");
-  return createMetadata(
-    article.title || article.headline,
-    article.metaDescription || article.summary,
-  );
+  if (!article) {
+    return createNotFoundMetadata("Story Unavailable");
+  }
+
+  const author = getAuthor(article.author);
+  const category = getCategory(article.category);
+
+  return createMetadata({
+    title: article.seoTitle || article.title || article.headline,
+    description:
+      article.seoDescription ||
+      article.metaDescription ||
+      article.standfirst ||
+      article.excerpt ||
+      article.summary,
+    canonicalPath: getArticleCanonicalPath(article),
+    ogType: "article",
+    ogImage: {
+      url: article.image,
+      alt: article.alt || article.headline,
+      width: 1200,
+      height: 630,
+    },
+    publishedTime: article.publishedAt,
+    modifiedTime: article.updatedAt || article.publishedAt,
+    authors: author ? [author.name] : ["MediaVault Global Editorial Desk"],
+    section: category?.name || article.category,
+    tags: article.tags,
+    keywords: article.keywords || article.tags,
+    noIndex: article.noIndex || article.status !== "published",
+  });
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -38,13 +64,51 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     ? a.pullQuote.replace(/^["“]|["”]$/g, "")
     : "Lasting progress begins with better questions — and the people willing to ask them.";
 
+  const breadcrumbs = [
+    { name: "Home", path: "/" },
+    { name: category?.name || a.category, path: `/category/${a.category}` },
+    ...(a.subcategory
+      ? [
+          {
+            name: a.subcategory,
+            path: `/category/${a.category}/${subSlug(a.subcategory)}`,
+          },
+        ]
+      : []),
+    { name: a.headline, path: getArticleCanonicalPath(a) },
+  ];
+
   return (
     <>
       <article className="site-container">
         <div className="reading-header">
-          <nav className="text-xs text-muted-foreground mb-6">
-            <Link href="/">Home</Link> /{" "}
-            <Link href={`/category/${a.category}`}>{category?.name}</Link>
+          <nav className="text-xs text-muted-foreground mb-6" aria-label="Breadcrumb">
+            <ol className="flex items-center flex-wrap gap-1.5 list-none p-0 m-0">
+              <li>
+                <Link href="/" className="hover:underline">
+                  Home
+                </Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li>
+                <Link href={`/category/${a.category}`} className="hover:underline">
+                  {category?.name}
+                </Link>
+              </li>
+              {a.subcategory && (
+                <>
+                  <li aria-hidden="true">/</li>
+                  <li>
+                    <Link
+                      href={`/category/${a.category}/${subSlug(a.subcategory)}`}
+                      className="hover:underline"
+                    >
+                      {a.subcategory}
+                    </Link>
+                  </li>
+                </>
+              )}
+            </ol>
           </nav>
           <span className="eyebrow">
             {a.series ? `${a.series} · ` : ""}
@@ -92,11 +156,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                     {para}
                   </p>
                 ))}
-                {i === 1 && (
-                  <blockquote>
-                    “{quoteText}”
-                  </blockquote>
-                )}
+                {i === 1 && <blockquote>“{quoteText}”</blockquote>}
               </section>
             ))}
             {a.factBox && (
@@ -129,17 +189,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              headline: a.headline,
-              description: a.summary,
-              datePublished: a.publishedAt,
-              author: {
-                "@type": "Organization",
-                name: "MediaVault Global Editorial Desk",
-              },
-            }).replace(/</g, "\\u003c"),
+            __html: safeJsonLd(getArticleJsonLd(a, author, category)),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: safeJsonLd(getBreadcrumbJsonLd(breadcrumbs)),
           }}
         />
       </article>

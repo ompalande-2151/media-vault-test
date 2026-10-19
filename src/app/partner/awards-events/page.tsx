@@ -4,10 +4,13 @@ import { createMetadata } from "@/lib/seo";
 import { PartnerNav } from "@/components/magazine/partner-nav";
 import { EnquiryForm } from "@/components/magazine/enquiry-form";
 
-export const metadata: Metadata = createMetadata(
-  "MediaVault Global Awards and Events",
-  "Industry recognition programmes, roundtables, and executive leadership convenings with strict governance.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "MediaVault Global Awards and Events",
+  description:
+    "Industry recognition programmes, roundtables, and executive leadership convenings with strict governance.",
+  canonicalPath: "/partner/awards-events",
+  ogType: "website",
+});
 
 const EVENT_PILLARS = [
   {
@@ -39,9 +42,9 @@ export default function AwardsEventsPage() {
         <span className="eyebrow">Industry Gatherings & Honours</span>
         <h1>Recognise and Convene</h1>
         <p className="mx-auto">
-          We plan recognition programmes and roundtables for industry leaders. Award-related
-          content is labelled Award. Selection criteria, jury and any fee are published openly.
-          We do not sell awards in a way that suggests independent editorial endorsement.
+          We plan recognition programmes and roundtables for industry leaders. Award-related content
+          is labelled Award. Selection criteria, jury and any fee are published openly. We do not
+          sell awards in a way that suggests independent editorial endorsement.
         </p>
       </div>
 

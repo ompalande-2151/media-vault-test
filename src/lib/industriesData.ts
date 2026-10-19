@@ -17,10 +17,8 @@ export const INDUSTRIES_ARTICLES: Article[] = [
   {
     id: "ind-manufacturing-1",
     slug: "india-electronics-manufacturing-components-skills",
-    title:
-      "India's Electronics Manufacturing Push: What the Factory Floor Actually Needs",
-    headline:
-      "From Assembly to Ecosystem: India's Electronics Factories Face the Harder Chapter",
+    title: "India's Electronics Manufacturing Push: What the Factory Floor Actually Needs",
+    headline: "From Assembly to Ecosystem: India's Electronics Factories Face the Harder Chapter",
     standfirst:
       "Production-linked incentives brought phone and electronics assembly to India. The next test is components, skills and suppliers. A sector outlook for manufacturers.",
     summary:
@@ -29,8 +27,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "Production-linked incentives brought phone and electronics assembly to India. The next test is components, skills and suppliers. A sector outlook for manufacturers.",
     metaDescription:
       "Production-linked incentives brought phone and electronics assembly to India. The next test is components, skills and suppliers. A sector outlook for manufacturers.",
-    customHref:
-      "/industries/manufacturing/india-electronics-manufacturing-components-skills",
+    customHref: "/industries/manufacturing/india-electronics-manufacturing-components-skills",
     category: "industries",
     subcategory: "Manufacturing",
     image: "/industries/MANUFACTURING.webp",
@@ -58,8 +55,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
     region: "in",
     status: "published",
     disclosure: "Editorial",
-    pullQuote:
-      "Assembly captures a slice of the value. Components capture much more.",
+    pullQuote: "Assembly captures a slice of the value. Components capture much more.",
     sourceNotes: [
       "[VERIFY: attach current export and output figures from MeitY/ICEA.]",
       "More pieces to commission: machine-tool revival in Rajkot and Coimbatore; the role of Gati Shakti in plant logistics; MSME packaging suppliers to electronics; women on assembly lines.",
@@ -88,10 +84,8 @@ export const INDUSTRIES_ARTICLES: Article[] = [
   {
     id: "ind-technology-1",
     slug: "india-global-capability-centres-talent-engine",
-    title:
-      "India's Global Capability Centres: The Technology Talent Engine Hiding in Plain Sight",
-    headline:
-      "The Back Office Became the Brain: How GCCs Are Reshaping Indian Tech",
+    title: "India's Global Capability Centres: The Technology Talent Engine Hiding in Plain Sight",
+    headline: "The Back Office Became the Brain: How GCCs Are Reshaping Indian Tech",
     standfirst:
       "Global capability centres are becoming the main source of high-skill technology jobs in India. What it means for cities, talent and local companies.",
     summary:
@@ -100,14 +94,12 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "Global capability centres are becoming the main source of high-skill technology jobs in India. What it means for cities, talent and local companies.",
     metaDescription:
       "Global capability centres are becoming the main source of high-skill technology jobs in India. What it means for cities, talent and local companies.",
-    customHref:
-      "/industries/technology/india-global-capability-centres-talent-engine",
+    customHref: "/industries/technology/india-global-capability-centres-talent-engine",
     category: "industries",
     subcategory: "Technology",
     image: "/industries/TECHNOLOGY.webp",
     alt: "Modern glass tech campus in Hyderabad at dusk with employees leaving",
-    imagePrompt:
-      "Modern glass tech campus in Hyderabad at dusk with employees leaving, 16:9.",
+    imagePrompt: "Modern glass tech campus in Hyderabad at dusk with employees leaving, 16:9.",
     author: "the-editorial-desk",
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",
@@ -137,7 +129,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
     body: [
       {
         title: "The Back Office Became the Brain",
-        text: "A global capability centre, or GCC, is a company-owned centre in India that does work for a parent firm abroad. Once seen as cost-saving back offices, many now run engineering, analytics, product and AI work.\n\nIndustry tracking reported about 183 new GCC units set up in the first half of 2026. [VERIFY: link the source and its definition of \"new unit\".] Hyderabad, Bengaluru, Pune, Chennai and the NCR remain the main hubs, with tier-2 cities such as Coimbatore, Ahmedabad and Kochi gaining attention.",
+        text: 'A global capability centre, or GCC, is a company-owned centre in India that does work for a parent firm abroad. Once seen as cost-saving back offices, many now run engineering, analytics, product and AI work.\n\nIndustry tracking reported about 183 new GCC units set up in the first half of 2026. [VERIFY: link the source and its definition of "new unit".] Hyderabad, Bengaluru, Pune, Chennai and the NCR remain the main hubs, with tier-2 cities such as Coimbatore, Ahmedabad and Kochi gaining attention.',
       },
       {
         title: "Why It Matters",
@@ -150,7 +142,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
     ],
     paragraphs: [
       "A global capability centre, or GCC, is a company-owned centre in India that does work for a parent firm abroad. Once seen as cost-saving back offices, many now run engineering, analytics, product and AI work.",
-      "Industry tracking reported about 183 new GCC units set up in the first half of 2026. [VERIFY: link the source and its definition of \"new unit\".] Hyderabad, Bengaluru, Pune, Chennai and the NCR remain the main hubs, with tier-2 cities such as Coimbatore, Ahmedabad and Kochi gaining attention.",
+      'Industry tracking reported about 183 new GCC units set up in the first half of 2026. [VERIFY: link the source and its definition of "new unit".] Hyderabad, Bengaluru, Pune, Chennai and the NCR remain the main hubs, with tier-2 cities such as Coimbatore, Ahmedabad and Kochi gaining attention.',
       "Why it matters: Talent gravity. GCCs hire experienced engineers and pay at the top end, which shifts the labour market for local startups and mid-sized firms. Leadership pipeline. GCC heads and their teams are becoming a new class of India-based decision-makers (see our Leadership feature). Local ecosystems. Facilities, vendors, housing and transport follow the centres.",
       "The risk: a GCC can be closed or moved if a parent changes strategy, and a city dependent on a few of them is exposed. More pieces to commission: AI engineering inside GCCs; GCCs in tier-2 cities; how startups hire against GCC salaries; cybersecurity talent.",
     ],
@@ -158,10 +150,8 @@ export const INDUSTRIES_ARTICLES: Article[] = [
   {
     id: "ind-healthcare-1",
     slug: "india-pharma-clusters-hyderabad-ahmedabad-baddi",
-    title:
-      "India's Pharma Corridor: Hyderabad, Ahmedabad and Baddi Under the Spotlight",
-    headline:
-      "The World's Medicine Cabinet Is Looking for Stronger Foundations",
+    title: "India's Pharma Corridor: Hyderabad, Ahmedabad and Baddi Under the Spotlight",
+    headline: "The World's Medicine Cabinet Is Looking for Stronger Foundations",
     standfirst:
       "India is a major supplier of generic medicines. What supports its pharma clusters, and what quality and supply-chain challenges lie ahead for manufacturers.",
     summary:
@@ -170,8 +160,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "India is a major supplier of generic medicines. What supports its pharma clusters, and what quality and supply-chain challenges lie ahead for manufacturers.",
     metaDescription:
       "India is a major supplier of generic medicines. What supports its pharma clusters, and what quality and supply-chain challenges lie ahead for manufacturers.",
-    customHref:
-      "/industries/healthcare/india-pharma-clusters-hyderabad-ahmedabad-baddi",
+    customHref: "/industries/healthcare/india-pharma-clusters-hyderabad-ahmedabad-baddi",
     category: "industries",
     subcategory: "Healthcare",
     image: "/industries/HEALTHCARE.webp",
@@ -230,8 +219,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
   {
     id: "ind-finance-1",
     slug: "msme-lending-india-data-replacing-collateral",
-    title:
-      "MSME Lending in India: How Data Is Starting to Replace Collateral",
+    title: "MSME Lending in India: How Data Is Starting to Replace Collateral",
     headline: "The Small Business Loan, Rewritten in Data",
     standfirst:
       "From GST data to account aggregators, lenders are changing how they assess small businesses. What it means for borrowers and fintechs.",
@@ -241,14 +229,12 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "From GST data to account aggregators, lenders are changing how they assess small businesses. What it means for borrowers and fintechs.",
     metaDescription:
       "From GST data to account aggregators, lenders are changing how they assess small businesses. What it means for borrowers and fintechs.",
-    customHref:
-      "/industries/finance/msme-lending-india-data-replacing-collateral",
+    customHref: "/industries/finance/msme-lending-india-data-replacing-collateral",
     category: "industries",
     subcategory: "Finance",
     image: "/industries/FINANCE.webp",
     alt: "Shopkeeper and loan officer reviewing a tablet showing cash-flow charts",
-    imagePrompt:
-      "Shopkeeper and loan officer reviewing a tablet showing cash-flow charts, 16:9.",
+    imagePrompt: "Shopkeeper and loan officer reviewing a tablet showing cash-flow charts, 16:9.",
     author: "the-editorial-desk",
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",
@@ -301,8 +287,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
   {
     id: "ind-retail-ecommerce-1",
     slug: "quick-commerce-kirana-who-wins",
-    title:
-      "Quick Commerce and the Kirana: Who Wins India's Neighbourhood Shopping?",
+    title: "Quick Commerce and the Kirana: Who Wins India's Neighbourhood Shopping?",
     headline: "The Ten-Minute Promise and the Corner Shop",
     standfirst:
       "Quick-commerce delivery is reshaping urban retail. What it means for local stores, brands and logistics, and how kirana owners are responding.",
@@ -312,8 +297,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "Quick-commerce delivery is reshaping urban retail. What it means for local stores, brands and logistics, and how kirana owners are responding.",
     metaDescription:
       "Quick-commerce delivery is reshaping urban retail. What it means for local stores, brands and logistics, and how kirana owners are responding.",
-    customHref:
-      "/industries/retail-ecommerce/quick-commerce-kirana-who-wins",
+    customHref: "/industries/retail-ecommerce/quick-commerce-kirana-who-wins",
     category: "industries",
     subcategory: "Retail & E-commerce",
     image: "/industries/RETAIL & E-COMMERCE.webp",
@@ -372,10 +356,8 @@ export const INDUSTRIES_ARTICLES: Article[] = [
   {
     id: "ind-education-1",
     slug: "industry-linked-training-itis-apprenticeships",
-    title:
-      "Skilling India's Workforce: Why Industry-Linked Training Is Replacing Generic Degrees",
-    headline:
-      "A Certificate Is Not a Skill: The Rise of Industry-Linked Training",
+    title: "Skilling India's Workforce: Why Industry-Linked Training Is Replacing Generic Degrees",
+    headline: "A Certificate Is Not a Skill: The Rise of Industry-Linked Training",
     standfirst:
       "Employers want job-ready technicians and operators. How ITIs, apprenticeships and industry academies are adapting and what graduates need.",
     summary:
@@ -384,14 +366,12 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "Employers want job-ready technicians and operators. How ITIs, apprenticeships and industry academies are adapting and what graduates need.",
     metaDescription:
       "Employers want job-ready technicians and operators. How ITIs, apprenticeships and industry academies are adapting and what graduates need.",
-    customHref:
-      "/industries/education/industry-linked-training-itis-apprenticeships",
+    customHref: "/industries/education/industry-linked-training-itis-apprenticeships",
     category: "industries",
     subcategory: "Education",
     image: "/industries/EDUCATION.webp",
     alt: "Trainees at welding stations in an ITI workshop with an instructor",
-    imagePrompt:
-      "Trainees at welding stations in an ITI workshop with an instructor, 16:9.",
+    imagePrompt: "Trainees at welding stations in an ITI workshop with an instructor, 16:9.",
     author: "the-editorial-desk",
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",
@@ -455,14 +435,12 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "Demand for warehouses and industrial parks is growing along freight corridors. What drives it and where investors and manufacturers are looking.",
     metaDescription:
       "Demand for warehouses and industrial parks is growing along freight corridors. What drives it and where investors and manufacturers are looking.",
-    customHref:
-      "/industries/real-estate/industrial-warehousing-real-estate-pune-ncr-chennai",
+    customHref: "/industries/real-estate/industrial-warehousing-real-estate-pune-ncr-chennai",
     category: "industries",
     subcategory: "Real Estate",
     image: "/industries/REAL ESTATE.webp",
     alt: "Aerial view of a modern warehouse park beside a highway",
-    imagePrompt:
-      "Aerial view of a modern warehouse park beside a highway, 16:9.",
+    imagePrompt: "Aerial view of a modern warehouse park beside a highway, 16:9.",
     author: "the-editorial-desk",
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",
@@ -514,8 +492,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
   {
     id: "ind-energy-1",
     slug: "india-clean-energy-solar-storage-factories",
-    title:
-      "India's Clean Energy Build-Out: What Solar and Storage Mean for Factories",
+    title: "India's Clean Energy Build-Out: What Solar and Storage Mean for Factories",
     headline: "The Power Bill Is Now a Strategy Decision",
     standfirst:
       "Rooftop solar, open access and storage are changing power costs for industrial users. A practical outlook for manufacturers.",
@@ -525,14 +502,12 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "Rooftop solar, open access and storage are changing power costs for industrial users. A practical outlook for manufacturers.",
     metaDescription:
       "Rooftop solar, open access and storage are changing power costs for industrial users. A practical outlook for manufacturers.",
-    customHref:
-      "/industries/energy/india-clean-energy-solar-storage-factories",
+    customHref: "/industries/energy/india-clean-energy-solar-storage-factories",
     category: "industries",
     subcategory: "Energy",
     image: "/industries/ENERGY.webp",
     alt: "Factory rooftop covered in solar panels at sunrise",
-    imagePrompt:
-      "Factory rooftop covered in solar panels at sunrise, 16:9.",
+    imagePrompt: "Factory rooftop covered in solar panels at sunrise, 16:9.",
     author: "the-editorial-desk",
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",
@@ -585,10 +560,8 @@ export const INDUSTRIES_ARTICLES: Article[] = [
   {
     id: "ind-logistics-1",
     slug: "india-logistics-costs-gati-shakti-freight-corridors",
-    title:
-      "India's Logistics Costs Are Falling: What Gati Shakti and Freight Corridors Change",
-    headline:
-      "Moving Goods Costs Less Than It Used To. It Still Costs More Than It Should.",
+    title: "India's Logistics Costs Are Falling: What Gati Shakti and Freight Corridors Change",
+    headline: "Moving Goods Costs Less Than It Used To. It Still Costs More Than It Should.",
     standfirst:
       "Better roads, dedicated freight corridors and digital platforms are reshaping goods movement. Practical implications for shippers and MSMEs.",
     summary:
@@ -597,14 +570,12 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "Better roads, dedicated freight corridors and digital platforms are reshaping goods movement. Practical implications for shippers and MSMEs.",
     metaDescription:
       "Better roads, dedicated freight corridors and digital platforms are reshaping goods movement. Practical implications for shippers and MSMEs.",
-    customHref:
-      "/industries/logistics/india-logistics-costs-gati-shakti-freight-corridors",
+    customHref: "/industries/logistics/india-logistics-costs-gati-shakti-freight-corridors",
     category: "industries",
     subcategory: "Logistics",
     image: "/industries/LOGISTICS.webp",
     alt: "Container train on a dedicated freight corridor at sunrise",
-    imagePrompt:
-      "Container train on a dedicated freight corridor at sunrise, 16:9.",
+    imagePrompt: "Container train on a dedicated freight corridor at sunrise, 16:9.",
     author: "the-editorial-desk",
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",
@@ -657,8 +628,7 @@ export const INDUSTRIES_ARTICLES: Article[] = [
   {
     id: "ind-hospitality-1",
     slug: "tier-2-cities-india-hotel-growth",
-    title:
-      "Beyond the Metro: Why Tier-2 Cities Are India's Next Hotel Growth Story",
+    title: "Beyond the Metro: Why Tier-2 Cities Are India's Next Hotel Growth Story",
     headline: "The Next Five-Star Opening Is Not in Mumbai",
     standfirst:
       "Business travel, weddings and pilgrimage are driving hotel demand in smaller cities. What operators and investors should know.",
@@ -668,14 +638,12 @@ export const INDUSTRIES_ARTICLES: Article[] = [
       "Business travel, weddings and pilgrimage are driving hotel demand in smaller cities. What operators and investors should know.",
     metaDescription:
       "Business travel, weddings and pilgrimage are driving hotel demand in smaller cities. What operators and investors should know.",
-    customHref:
-      "/industries/hospitality/tier-2-cities-india-hotel-growth",
+    customHref: "/industries/hospitality/tier-2-cities-india-hotel-growth",
     category: "industries",
     subcategory: "Hospitality",
     image: "/industries/HOSPITALITY.webp",
     alt: "Boutique hotel lobby in a tier-2 Indian city with guests checking in",
-    imagePrompt:
-      "Boutique hotel lobby in a tier-2 Indian city with guests checking in, 16:9.",
+    imagePrompt: "Boutique hotel lobby in a tier-2 Indian city with guests checking in, 16:9.",
     author: "the-editorial-desk",
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",

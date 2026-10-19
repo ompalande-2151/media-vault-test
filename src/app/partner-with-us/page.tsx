@@ -1,1 +1,5 @@
-export { default, metadata } from "@/app/partner/page";
+import { permanentRedirect } from "next/navigation";
+
+export default function PartnerWithUsRedirect() {
+  permanentRedirect("/partner");
+}

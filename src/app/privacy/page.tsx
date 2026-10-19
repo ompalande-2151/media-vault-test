@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { createMetadata } from "@/lib/seo";
 import { PolicyPage } from "@/components/magazine/policy-page";
 
-export const metadata: Metadata = createMetadata(
-  "Privacy policy",
-  "Privacy information for readers, newsletter subscribers and people contacting MediaVault Global.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Privacy Policy",
+  description:
+    "Privacy information for readers, newsletter subscribers and people contacting MediaVault Global.",
+  canonicalPath: "/privacy",
+  ogType: "website",
+});
 
 export default function PrivacyPage() {
   return (

@@ -27,10 +27,7 @@ export const MAGAZINE_ISSUES: Issue[] = [
     title: "The builders",
     theme: "Ideas. Conviction. Impact.",
     image: imgFounders,
-    stories: [
-      STARTUPS_FOUNDERS_ARTICLES[0].slug,
-      STARTUPS_FOUNDERS_ARTICLES[2].slug,
-    ],
+    stories: [STARTUPS_FOUNDERS_ARTICLES[0].slug, STARTUPS_FOUNDERS_ARTICLES[2].slug],
   },
   {
     slug: "august-2026",

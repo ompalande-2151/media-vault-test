@@ -16,12 +16,15 @@ import {
   getBriefArticles,
   getCategoryLabel,
 } from "@/lib/queries";
-import { createMetadata } from "@/lib/seo";
+import { createMetadata, getArticleCanonicalPath } from "@/lib/seo";
 
-export const metadata: Metadata = createMetadata(
-  "Business, leadership & what comes next",
-  "The people, ideas and businesses shaping what comes next — from India to the world. Explore MediaVault Global.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "MediaVault Global | Business, leadership & what comes next",
+  description:
+    "The people, ideas and businesses shaping what comes next — from India to the world. Explore MediaVault Global.",
+  canonicalPath: "/",
+  ogType: "website",
+});
 
 export default function HomePage() {
   const articles = getArticles();
@@ -41,7 +44,8 @@ export default function HomePage() {
             <strong>India Is Being Built Here.</strong>
           </span>
           <span className="flex items-center gap-2">
-            <span className="dot" /> Enterprise, leadership and founder stories from the corridors, plants and offices driving India's economy.
+            <span className="dot" /> Enterprise, leadership and founder stories from the corridors,
+            plants and offices driving India's economy.
           </span>
         </div>
         <div className="cover-grid">
@@ -52,11 +56,9 @@ export default function HomePage() {
             </div>
             {briefArticles.map((a) => (
               <article className="brief-story" key={a.slug}>
-                <span className="eyebrow">
-                  {getCategoryLabel(a.category)}
-                </span>
+                <span className="eyebrow">{getCategoryLabel(a.category)}</span>
                 <h3>
-                  <Link href={a.customHref || `/article/${a.slug}`}>{a.headline}</Link>
+                  <Link href={getArticleCanonicalPath(a)}>{a.headline}</Link>
                 </h3>
               </article>
             ))}

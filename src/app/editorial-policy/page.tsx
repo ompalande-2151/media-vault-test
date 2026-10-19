@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { createMetadata } from "@/lib/seo";
 import { PolicyPage } from "@/components/magazine/policy-page";
 
-export const metadata: Metadata = createMetadata(
-  "Editorial policy & standards",
-  "Our commitment to editorial independence, accurate reporting, clear disclosures and reader trust.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Editorial Policy & Standards",
+  description:
+    "Our commitment to editorial independence, accurate reporting, clear disclosures and reader trust.",
+  canonicalPath: "/editorial-policy",
+  ogType: "website",
+});
 
 export default function EditorialPolicyPage() {
   return (

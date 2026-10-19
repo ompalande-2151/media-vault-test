@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { createMetadata } from "@/lib/seo";
 import { PolicyPage } from "@/components/magazine/policy-page";
 
-export const metadata: Metadata = createMetadata(
-  "Terms of use",
-  "Terms for reading, sharing and submitting content to MediaVault Global.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Terms of Use",
+  description: "Terms for reading, sharing and submitting content to MediaVault Global.",
+  canonicalPath: "/terms",
+  ogType: "website",
+});
 
 export default function TermsPage() {
   return (

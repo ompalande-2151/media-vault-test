@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { createMetadata } from "@/lib/seo";
 import { EnquiryForm } from "@/components/magazine/enquiry-form";
 
-export const metadata: Metadata = createMetadata(
-  "Pitch a story",
-  "Share a founder journey, leadership perspective or company story with the MediaVault Global editorial team.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Pitch a Story | MediaVault Global",
+  description:
+    "Share a founder journey, leadership perspective or company story with the MediaVault Global editorial team.",
+  canonicalPath: "/submit-a-story",
+  ogType: "website",
+});
 
 export default function SubmitAStoryPage() {
   return (

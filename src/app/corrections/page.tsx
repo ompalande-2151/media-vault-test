@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { createMetadata } from "@/lib/seo";
 import { PolicyPage } from "@/components/magazine/policy-page";
 
-export const metadata: Metadata = createMetadata(
-  "Corrections policy",
-  "How MediaVault Global handles factual errors, updates and reader requests for corrections.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Corrections Policy",
+  description:
+    "How MediaVault Global handles factual errors, updates and reader requests for corrections.",
+  canonicalPath: "/corrections",
+  ogType: "website",
+});
 
 export default function CorrectionsPage() {
   return (

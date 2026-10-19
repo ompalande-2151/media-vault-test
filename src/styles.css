@@ -145,7 +145,16 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-sans-google, "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  --font-sans: var(
+    --font-sans-google,
+    "Plus Jakarta Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif
+  );
   --font-nav: var(--font-nav-google, var(--font-sans));
   --font-editorial: var(--font-editorial-google, "Newsreader", Georgia, serif);
   --color-ink: var(--ink);
@@ -161,10 +170,12 @@
   --paper: oklch(0.975 0.003 260);
   --hero-text: oklch(1 0 0);
   --hero-muted: oklch(0.91 0 0);
-  --hero-shade: linear-gradient(0deg,
-      oklch(0.13 0.015 260 / 94%) 0%,
-      oklch(0.16 0.015 260 / 45%) 55%,
-      oklch(0.16 0.015 260 / 4%) 100%);
+  --hero-shade: linear-gradient(
+    0deg,
+    oklch(0.13 0.015 260 / 94%) 0%,
+    oklch(0.16 0.015 260 / 45%) 55%,
+    oklch(0.16 0.015 260 / 4%) 100%
+  );
 }
 
 @layer base {
@@ -374,12 +385,12 @@
   height: 640px;
 }
 
-.cover-grid>*,
-.story-grid>*,
-.spotlight>*,
-.newsletter-inner>*,
-.form-layout>*,
-.issue-layout>* {
+.cover-grid > *,
+.story-grid > *,
+.spotlight > *,
+.newsletter-inner > *,
+.form-layout > *,
+.issue-layout > * {
   min-width: 0;
 }
 
@@ -396,7 +407,7 @@
   box-sizing: border-box;
 }
 
-.cover-story>img,
+.cover-story > img,
 .cover-story-bg {
   position: absolute;
   inset: 0;
@@ -476,7 +487,6 @@
     font-size: 32px;
   }
 }
-
 
 .eyebrow {
   font-size: 10px;
@@ -1289,7 +1299,7 @@
     letter-spacing: 0;
   }
 
-  .edition-line> :last-child {
+  .edition-line > :last-child {
     display: none;
   }
 
@@ -1329,7 +1339,6 @@
   }
 
   .brief-story h3 {
-
     font-size: 24px;
   }
 
@@ -1401,7 +1410,7 @@
     gap: 35px 25px;
   }
 
-  .footer-top> :first-child {
+  .footer-top > :first-child {
     grid-column: 1 / -1;
   }
 
@@ -1470,7 +1479,7 @@
     font-size: 13px;
   }
 
-  .filter-bar>a {
+  .filter-bar > a {
     white-space: normal;
     height: auto;
     min-height: 40px;
@@ -1567,7 +1576,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
   text-decoration: none;
 }
 
@@ -1691,7 +1702,6 @@
   color: var(--muted-foreground);
   margin: 0;
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   html {

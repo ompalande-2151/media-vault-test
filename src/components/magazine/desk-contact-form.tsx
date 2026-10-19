@@ -75,9 +75,7 @@ export function DeskContactForm({ initialTopic }: { initialTopic?: string }) {
             {...register("name")}
             aria-invalid={!!errors.name}
           />
-          {errors.name && (
-            <span className="text-xs text-destructive">{errors.name.message}</span>
-          )}
+          {errors.name && <span className="text-xs text-destructive">{errors.name.message}</span>}
         </div>
 
         <div className="field">
@@ -89,9 +87,7 @@ export function DeskContactForm({ initialTopic }: { initialTopic?: string }) {
             {...register("email")}
             aria-invalid={!!errors.email}
           />
-          {errors.email && (
-            <span className="text-xs text-destructive">{errors.email.message}</span>
-          )}
+          {errors.email && <span className="text-xs text-destructive">{errors.email.message}</span>}
         </div>
 
         <div className="field">
@@ -115,16 +111,12 @@ export function DeskContactForm({ initialTopic }: { initialTopic?: string }) {
             <option value="Editorial tips and story pitches">
               Editorial tips and story pitches
             </option>
-            <option value="Partnerships and advertising">
-              Partnerships and advertising
-            </option>
+            <option value="Partnerships and advertising">Partnerships and advertising</option>
             <option value="Corrections">Corrections</option>
             <option value="Press">Press enquiry</option>
             <option value="General enquiry">General enquiry</option>
           </select>
-          {errors.topic && (
-            <span className="text-xs text-destructive">{errors.topic.message}</span>
-          )}
+          {errors.topic && <span className="text-xs text-destructive">{errors.topic.message}</span>}
         </div>
 
         <div className="field field-wide">
@@ -154,7 +146,8 @@ export function DeskContactForm({ initialTopic }: { initialTopic?: string }) {
       {errors.consent && <p className="form-status">{errors.consent.message}</p>}
 
       <p className="form-note mt-4">
-        All incoming correspondence is reviewed by the appropriate department. Confidential editorial tips are treated in strict accordance with journalistic confidentiality.
+        All incoming correspondence is reviewed by the appropriate department. Confidential
+        editorial tips are treated in strict accordance with journalistic confidentiality.
       </p>
 
       <Button size="lg" disabled={isSubmitting} type="submit" className="mt-3">
@@ -163,7 +156,11 @@ export function DeskContactForm({ initialTopic }: { initialTopic?: string }) {
       </Button>
 
       {status && (
-        <p className="form-status mt-4 font-medium" role="status" style={{ color: "var(--foreground)" }}>
+        <p
+          className="form-status mt-4 font-medium"
+          role="status"
+          style={{ color: "var(--foreground)" }}
+        >
           {status}
         </p>
       )}

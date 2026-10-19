@@ -12,10 +12,8 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
   {
     id: "msme-finance-1",
     slug: "treds-guide-indian-msme-get-paid-faster",
-    title:
-      "TReDS Explained: How Indian MSMEs Can Get Paid in Days, Not Months",
-    headline:
-      "Waiting Ninety Days for Your Money Is Not a Business Model: A Plain Guide to TReDS",
+    title: "TReDS Explained: How Indian MSMEs Can Get Paid in Days, Not Months",
+    headline: "Waiting Ninety Days for Your Money Is Not a Business Model: A Plain Guide to TReDS",
     standfirst:
       "Late payment is the quiet tax on every small manufacturer in India. TReDS was built to remove it, and in 2026 the rules finally lean in the supplier's favour.",
     summary:
@@ -25,8 +23,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
     metaDescription:
       "A plain-language guide to TReDS for Indian MSMEs: how invoice discounting works, which platforms exist, what changed in 2026, and how to start without a finance team.",
     series: "MSME Playbook",
-    customHref:
-      "/msme-growth/finance/treds-guide-indian-msme-get-paid-faster",
+    customHref: "/msme-growth/finance/treds-guide-indian-msme-get-paid-faster",
     category: "msme-growth",
     subcategory: "Finance",
     image: "/growth/FINANCE.webp",
@@ -69,7 +66,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
     body: [
       {
         title: "The Arithmetic That Sinks Sound Businesses",
-        text: "Ask the owner of a forty-person fabrication unit what keeps her awake and she rarely says \"demand\". She says \"receivables\". The order is in. The material is bought. The wages go out on the seventh of the month. And the invoice she raised in July will be paid, with luck, in October.\n\nThis is the arithmetic that sinks sound businesses. Not a lack of customers, but a gap between the day cash leaves and the day cash returns.",
+        text: 'Ask the owner of a forty-person fabrication unit what keeps her awake and she rarely says "demand". She says "receivables". The order is in. The material is bought. The wages go out on the seventh of the month. And the invoice she raised in July will be paid, with luck, in October.\n\nThis is the arithmetic that sinks sound businesses. Not a lack of customers, but a gap between the day cash leaves and the day cash returns.',
       },
       {
         title: "What TReDS Actually Is",
@@ -89,7 +86,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
       },
     ],
     paragraphs: [
-      "Ask the owner of a forty-person fabrication unit what keeps her awake and she rarely says \"demand\". She says \"receivables\". The order is in. The material is bought. The wages go out on the seventh of the month. And the invoice she raised in July will be paid, with luck, in October.",
+      'Ask the owner of a forty-person fabrication unit what keeps her awake and she rarely says "demand". She says "receivables". The order is in. The material is bought. The wages go out on the seventh of the month. And the invoice she raised in July will be paid, with luck, in October.',
       "This is the arithmetic that sinks sound businesses. Not a lack of customers, but a gap between the day cash leaves and the day cash returns.",
       "The Trade Receivables Discounting System, TReDS for short, is an RBI-regulated electronic platform where a supplier uploads an invoice raised on a large buyer, the buyer accepts it online, and financiers bid to pay the supplier early at a discount. The supplier gets money within days. The buyer pays the financier on the original due date.",
       "Volumes tell the story. Public reporting shows TReDS financing growing from roughly ₹40,000 crore in FY22 to about ₹3.47 lakh crore in FY26. That is not a niche product any more.",
@@ -99,8 +96,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
   {
     id: "msme-sales-marketing-1",
     slug: "win-tier-2-supplier-slot-auto-cluster-chakan",
-    title:
-      "How a Small Manufacturer Wins a Tier-2 Supplier Slot in Auto Clusters Like Chakan",
+    title: "How a Small Manufacturer Wins a Tier-2 Supplier Slot in Auto Clusters Like Chakan",
     headline:
       "The Sales Call Is the Last Step: How Small Manufacturers Win a Place in an Auto Supply Chain",
     standfirst:
@@ -112,8 +108,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
     metaDescription:
       "What auto OEMs and Tier-1s look for before they add a new supplier: quality systems, audits, sample approvals and costing. A practical sales guide for Indian MSMEs.",
     series: "MSME Playbook",
-    customHref:
-      "/msme-growth/sales-marketing/win-tier-2-supplier-slot-auto-cluster-chakan",
+    customHref: "/msme-growth/sales-marketing/win-tier-2-supplier-slot-auto-cluster-chakan",
     category: "msme-growth",
     subcategory: "Sales & Marketing",
     image: "/growth/SALES & MARKETING.webp",
@@ -143,8 +138,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
     region: "in",
     status: "published",
     disclosure: "Editorial",
-    pullQuote:
-      "In an auto cluster, marketing is not a campaign. It is an audit trail.",
+    pullQuote: "In an auto cluster, marketing is not a campaign. It is an audit trail.",
     sourceNotes: [
       "General industry practice: IATF 16949, ISO 9001, PPAP (AIAG). No statistics used.",
       "[TO BE CONFIRMED] Optional quote from a Chakan or Pimpri-Chinchwad supplier development manager or a local industry association.",
@@ -152,7 +146,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
     body: [
       {
         title: "The Buyer's Real Question",
-        text: "Drive through an auto cluster near Pune and you see the same scene at every gate: a security cabin, a visitor register and, somewhere inside, a purchase manager who has been pitched forty times this year.\n\nSelling to an automotive buyer is unlike selling to a retailer. Nobody is deciding in an afternoon. A new supplier is a risk to the production line, and the buyer's job is to reduce risk. So the pitch that works is not \"we are cheaper\". It is \"we are safe to add\".\n\nA Tier-1 supplier or OEM purchase team asks, in effect, five things:\n- Can you make this part to drawing, every time?\n- Can you prove it, with records?\n- Can you deliver on the day, in the quantity, without a call?\n- Can you survive a price negotiation without cutting corners?\n- What happens when something goes wrong?\n\nEvery item on your sales deck should answer one of these.",
+        text: 'Drive through an auto cluster near Pune and you see the same scene at every gate: a security cabin, a visitor register and, somewhere inside, a purchase manager who has been pitched forty times this year.\n\nSelling to an automotive buyer is unlike selling to a retailer. Nobody is deciding in an afternoon. A new supplier is a risk to the production line, and the buyer\'s job is to reduce risk. So the pitch that works is not "we are cheaper". It is "we are safe to add".\n\nA Tier-1 supplier or OEM purchase team asks, in effect, five things:\n- Can you make this part to drawing, every time?\n- Can you prove it, with records?\n- Can you deliver on the day, in the quantity, without a call?\n- Can you survive a price negotiation without cutting corners?\n- What happens when something goes wrong?\n\nEvery item on your sales deck should answer one of these.',
       },
       {
         title: "The Documents That Open the Door",
@@ -169,7 +163,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
     ],
     paragraphs: [
       "Drive through an auto cluster near Pune and you see the same scene at every gate: a security cabin, a visitor register and, somewhere inside, a purchase manager who has been pitched forty times this year.",
-      "Selling to an automotive buyer is unlike selling to a retailer. Nobody is deciding in an afternoon. A new supplier is a risk to the production line, and the buyer's job is to reduce risk. So the pitch that works is not \"we are cheaper\". It is \"we are safe to add\".",
+      'Selling to an automotive buyer is unlike selling to a retailer. Nobody is deciding in an afternoon. A new supplier is a risk to the production line, and the buyer\'s job is to reduce risk. So the pitch that works is not "we are cheaper". It is "we are safe to add".',
       "Quality system certification and PPAP documentation are essential. Doing a clean PPAP on a first sample is one of the strongest sales signals a small supplier can send.",
       "In an auto cluster, marketing is not a campaign. It is an audit trail. The unit that keeps its records clean, its samples on time and its promises modest becomes the one the purchase team calls first.",
     ],
@@ -190,8 +184,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
     metaDescription:
       "How small factories in MIDC, GIDC and SIPCOT estates can hire skilled operators, cut attrition and build a workforce that stays, without matching big-company salaries.",
     series: "The Growth Desk",
-    customHref:
-      "/msme-growth/people-culture/hire-retain-skilled-workers-industrial-estates-msme",
+    customHref: "/msme-growth/people-culture/hire-retain-skilled-workers-industrial-estates-msme",
     category: "msme-growth",
     subcategory: "People & Culture",
     image: "/growth/PEOPLE & CULTURE.webp",
@@ -256,10 +249,8 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
   {
     id: "msme-productivity-1",
     slug: "digital-adoption-small-shop-floor-where-to-start",
-    title:
-      "Digital Tools for a Small Shop Floor: What to Adopt First, Second and Third",
-    headline:
-      "Before You Buy the ERP: A Sensible Order for Digitising a Small Factory",
+    title: "Digital Tools for a Small Shop Floor: What to Adopt First, Second and Third",
+    headline: "Before You Buy the ERP: A Sensible Order for Digitising a Small Factory",
     standfirst:
       "Most failed digital projects in small factories do not fail because the software was bad. They fail because it was bought in the wrong order.",
     summary:
@@ -269,8 +260,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
     metaDescription:
       "A sequenced guide for Indian MSME manufacturers on adopting digital tools, from simple production tracking to maintenance and quality, without overspending.",
     series: "The Growth Desk",
-    customHref:
-      "/msme-growth/productivity/digital-adoption-small-shop-floor-where-to-start",
+    customHref: "/msme-growth/productivity/digital-adoption-small-shop-floor-where-to-start",
     category: "msme-growth",
     subcategory: "Productivity",
     image: "/growth/PRODUCTIVITY.webp",
@@ -333,8 +323,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
   {
     id: "msme-expansion-1",
     slug: "expand-msme-second-plant-new-state-exports-guide",
-    title:
-      "From One Plant to Many: A Practical Guide to Expanding an Indian MSME Manufacturer",
+    title: "From One Plant to Many: A Practical Guide to Expanding an Indian MSME Manufacturer",
     headline:
       "Growing Beyond the First Shed: Questions to Answer Before You Build the Second Plant",
     standfirst:
@@ -346,8 +335,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
     metaDescription:
       "How to decide when and where to expand: second unit, new state, exports. A guide for Indian MSME owners on funding, location, compliance and risk.",
     series: "The Growth Desk",
-    customHref:
-      "/msme-growth/expansion/expand-msme-second-plant-new-state-exports-guide",
+    customHref: "/msme-growth/expansion/expand-msme-second-plant-new-state-exports-guide",
     category: "msme-growth",
     subcategory: "Expansion",
     image: "/growth/EXPANSION.webp",
@@ -401,7 +389,7 @@ export const MSME_GROWTH_ARTICLES: Article[] = [
       },
     ],
     paragraphs: [
-      "Every ambitious MSME owner reaches the same moment. Orders exceed capacity. The shed is full. Someone suggests a bigger plot, or a second unit in another state, or \"going export\".",
+      'Every ambitious MSME owner reaches the same moment. Orders exceed capacity. The shed is full. Someone suggests a bigger plot, or a second unit in another state, or "going export".',
       "Government data puts MSMEs at about 48.58% of India's exports and around 35.4% of manufacturing output.",
       "Question your expansion triggers: ensure demand is real, squeeze capacity from the existing site, select locations based on logistics and talent, and match your funding sources carefully.",
       "Expansion rewards patience. The most durable Indian MSMEs add capacity when demand is proven, choose sites for customers rather than convenience, and build the management layer before the building.",

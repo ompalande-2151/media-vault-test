@@ -11,8 +11,7 @@ export const LEADERSHIP_ARTICLES: Article[] = [
   {
     id: "lead-women-1",
     slug: "women-ceos-india-top-500-listed-companies-2026",
-    title:
-      "Women CEOs in India's Top 500 Listed Companies: 2026 Data | MediaVault Global",
+    title: "Women CEOs in India's Top 500 Listed Companies: 2026 Data | MediaVault Global",
     headline:
       "Nine Women CEOs in India's Top 500. What the Boardroom Numbers Say, and What They Hide",
     standfirst:
@@ -24,8 +23,7 @@ export const LEADERSHIP_ARTICLES: Article[] = [
     metaDescription:
       "Parliament data shows 9 women CEOs and 860 women directors across India's top 500 listed firms. The gap between board seats and executive power is the real story.",
     series: "Women Who Lead",
-    customHref:
-      "/leadership/women-in-leadership/women-ceos-india-top-500-listed-companies-2026",
+    customHref: "/leadership/women-in-leadership/women-ceos-india-top-500-listed-companies-2026",
     category: "leadership",
     subcategory: "Women in Leadership",
     image: "/leadership/WOMEN IN LEADERSHIP.webp",
@@ -85,8 +83,7 @@ export const LEADERSHIP_ARTICLES: Article[] = [
   {
     id: "lead-ceo-1",
     slug: "flattening-management-layers-korn-ferry-india-ceos",
-    title:
-      "Management Layers Cut: What It Means for CEOs and CXOs | MediaVault Global",
+    title: "Management Layers Cut: What It Means for CEOs and CXOs | MediaVault Global",
     headline:
       "The Manager Who Now Runs Twenty-Five People: What Flattening Does to a Leadership Team",
     standfirst:
@@ -98,8 +95,7 @@ export const LEADERSHIP_ARTICLES: Article[] = [
     metaDescription:
       "Korn Ferry found 41% of organisations cut management layers. For Indian CEOs the question isn't whether to flatten, but who carries the load afterwards.",
     series: "The Leadership Brief",
-    customHref:
-      "/leadership/ceo-cxo/flattening-management-layers-korn-ferry-india-ceos",
+    customHref: "/leadership/ceo-cxo/flattening-management-layers-korn-ferry-india-ceos",
     category: "leadership",
     subcategory: "CEO & CXO",
     image: "/leadership/CEO & CXO.webp",
@@ -162,8 +158,7 @@ export const LEADERSHIP_ARTICLES: Article[] = [
   {
     id: "lead-lessons-1",
     slug: "questions-manufacturing-ceo-plant-head-weekly",
-    title:
-      "Questions Every Manufacturing CEO Should Ask the Plant Head | MediaVault Global",
+    title: "Questions Every Manufacturing CEO Should Ask the Plant Head | MediaVault Global",
     headline:
       "The Monday Conversation: Five Questions a Manufacturing CEO Should Ask the Plant Head",
     standfirst:
@@ -175,8 +170,7 @@ export const LEADERSHIP_ARTICLES: Article[] = [
     metaDescription:
       "A practical leadership guide: the weekly questions that reveal what a factory dashboard won't, from rework to the next shift leader.",
     series: "CEO Perspective",
-    customHref:
-      "/leadership/leadership-lessons/questions-manufacturing-ceo-plant-head-weekly",
+    customHref: "/leadership/leadership-lessons/questions-manufacturing-ceo-plant-head-weekly",
     category: "leadership",
     subcategory: "Leadership Lessons",
     image: "/leadership/LEADERSHIP LESSONS.webp",
@@ -232,8 +226,7 @@ export const LEADERSHIP_ARTICLES: Article[] = [
   {
     id: "lead-ceo-2",
     slug: "family-business-succession-planning-india",
-    title:
-      "Family Business Succession Planning in India: A Practical Guide | MediaVault Global",
+    title: "Family Business Succession Planning in India: A Practical Guide | MediaVault Global",
     headline: "The Succession Decision Indian Family Firms Delay the Longest",
     standfirst:
       "Handing a business to the next generation is a process, not an event. A practical look at the steps promoters often skip.",
@@ -244,8 +237,7 @@ export const LEADERSHIP_ARTICLES: Article[] = [
     metaDescription:
       "Handing a business to the next generation is a process, not an event. A practical look at the steps promoters often skip.",
     series: "The Leadership Brief",
-    customHref:
-      "/leadership/ceo-cxo/family-business-succession-planning-india",
+    customHref: "/leadership/ceo-cxo/family-business-succession-planning-india",
     category: "leadership",
     subcategory: "CEO & CXO",
     image: "/leadership/02. CEO & CXO.webp",
@@ -283,7 +275,7 @@ export const LEADERSHIP_ARTICLES: Article[] = [
       },
       {
         title: "Separate Ownership, Management and Family",
-        text: "Separate three things that usually travel together. Ownership, management and the family's role are different questions. A son may inherit shares and still not be the right person to run the plant. A daughter may be the best operator in the building and have no formal title because the family assumed she would \"help\" until marriage. Writing the three decisions down separately, even in a short memo, removes a surprising amount of tension.\n\nLet the successor earn a unit: The most reliable pattern we see in long-lived firms is a trial: give the next-generation leader one business line, one site or one customer segment with real numbers attached, and review it quarterly. Not a shadow title. A job with a result.",
+        text: 'Separate three things that usually travel together. Ownership, management and the family\'s role are different questions. A son may inherit shares and still not be the right person to run the plant. A daughter may be the best operator in the building and have no formal title because the family assumed she would "help" until marriage. Writing the three decisions down separately, even in a short memo, removes a surprising amount of tension.\n\nLet the successor earn a unit: The most reliable pattern we see in long-lived firms is a trial: give the next-generation leader one business line, one site or one customer segment with real numbers attached, and review it quarterly. Not a shadow title. A job with a result.',
       },
       {
         title: "Outside Voice and the Founder's Next Role",
@@ -300,10 +292,8 @@ export const LEADERSHIP_ARTICLES: Article[] = [
   {
     id: "lead-emerging-1",
     slug: "global-capability-centres-india-leadership-talent-2026",
-    title:
-      "Global Capability Centres India: The New Leadership Academy | MediaVault Global",
-    headline:
-      "India's New Leadership Academy Is Inside Global Capability Centres",
+    title: "Global Capability Centres India: The New Leadership Academy | MediaVault Global",
+    headline: "India's New Leadership Academy Is Inside Global Capability Centres",
     standfirst:
       "India added 183 GCC units in H1 2026. The people running them are learning global leadership at home. A look at what that does for Indian talent.",
     summary:

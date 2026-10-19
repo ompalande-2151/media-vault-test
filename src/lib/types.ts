@@ -28,6 +28,12 @@ export interface Article {
   sourceNotes?: string[];
   factBox?: string;
   imagePrompt?: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  canonicalUrl?: string;
+  noIndex?: boolean;
+  updatedAt?: string;
+  contentType?: "Article" | "NewsArticle" | "Report";
 }
 
 export interface Category {

@@ -158,7 +158,7 @@ export function Header() {
             <Link href="/video">Video</Link>
             <Link href="/magazine">Magazine</Link>
             <Link href="/about">About</Link>
-            <Link href="/partner-with-us">Partner With Us</Link>
+            <Link href="/partner">Partner With Us</Link>
             <Button asChild>
               <Link href="/submit-a-story">
                 Pitch a Story

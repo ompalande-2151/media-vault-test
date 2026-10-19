@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getLeader, getLeaders, getArticle } from "@/lib/queries";
-import { createMetadata } from "@/lib/seo";
+import { createMetadata, createNotFoundMetadata } from "@/lib/seo";
+import { getBreadcrumbJsonLd, getLeaderJsonLd, safeJsonLd } from "@/lib/structured-data";
 import { StoryCard } from "@/components/magazine/story-card";
 
 export async function generateStaticParams() {
@@ -16,9 +17,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const leader = getLeader(slug);
-  if (!leader)
-    return createMetadata("Profile unavailable", "Meet leaders and founders on MediaVault Global.");
-  return createMetadata(leader.name, leader.bio);
+  if (!leader) {
+    return createNotFoundMetadata("Leader Unavailable");
+  }
+  return createMetadata({
+    title: `${leader.name} — Leadership Spotlight`,
+    description: leader.bio,
+    canonicalPath: `/leaders/${leader.slug}`,
+    ogType: "website",
+    ogImage: leader.image,
+  });
 }
 
 export default async function LeaderPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -27,6 +35,11 @@ export default async function LeaderPage({ params }: { params: Promise<{ slug: s
   if (!l) notFound();
 
   const article = getArticle(l.article);
+  const breadcrumbs = [
+    { name: "Home", path: "/" },
+    { name: "Leadership", path: "/category/leadership" },
+    { name: l.name, path: `/leaders/${l.slug}` },
+  ];
 
   return (
     <div className="site-container">
@@ -40,7 +53,7 @@ export default async function LeaderPage({ params }: { params: Promise<{ slug: s
       <div className="spotlight mb-12">
         <img
           src={l.image}
-          alt={`AI-generated portrait of fictional founder ${l.name}`}
+          alt={`Editorial portrait of ${l.name}, ${l.role} at ${l.company}`}
           width={1024}
           height={1024}
         />
@@ -62,13 +75,13 @@ export default async function LeaderPage({ params }: { params: Promise<{ slug: s
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: l.name,
-            jobTitle: l.role,
-            description: l.bio,
-          }).replace(/</g, "\\u003c"),
+          __html: safeJsonLd(getLeaderJsonLd(l)),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeJsonLd(getBreadcrumbJsonLd(breadcrumbs)),
         }}
       />
     </div>

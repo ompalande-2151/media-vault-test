@@ -5,21 +5,26 @@ import { createMetadata } from "@/lib/seo";
 import { PartnerNav } from "@/components/magazine/partner-nav";
 import { EnquiryForm } from "@/components/magazine/enquiry-form";
 
-export const metadata: Metadata = createMetadata(
-  "Submit a Press Release | MediaVault Global",
-  "Submit official announcements and corporate developments to the MediaVault Global press releases stream.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Submit a Press Release | MediaVault Global",
+  description:
+    "Submit official announcements and corporate developments to the MediaVault Global press releases stream.",
+  canonicalPath: "/partner/press-releases",
+  ogType: "website",
+});
 
 const CHECKLIST = [
   {
     icon: FileText,
     item: "Clear, factual headline",
-    detail: "State the core announcement objectively without excessive hyperbole or promotional buzzwords.",
+    detail:
+      "State the core announcement objectively without excessive hyperbole or promotional buzzwords.",
   },
   {
     icon: CheckSquare,
     item: "300–500 words of copy",
-    detail: "Concise announcement including date, location, key quote, and essential background details.",
+    detail:
+      "Concise announcement including date, location, key quote, and essential background details.",
   },
   {
     icon: User,
@@ -29,7 +34,8 @@ const CHECKLIST = [
   {
     icon: Image,
     item: "High-resolution corporate imagery",
-    detail: "Minimum 1200px width. Product photography, executive headshot, or official corporate logo.",
+    detail:
+      "Minimum 1200px width. Product photography, executive headshot, or official corporate logo.",
   },
   {
     icon: Link2,
@@ -45,8 +51,8 @@ export default function PressReleasesPage() {
         <span className="eyebrow">Corporate News Wire</span>
         <h1>Share Company News</h1>
         <p className="mx-auto">
-          Submit announcements for the Press Release section. Releases are labelled, published
-          as supplied after a basic check and are not editorial coverage. Our editors may separately
+          Submit announcements for the Press Release section. Releases are labelled, published as
+          supplied after a basic check and are not editorial coverage. Our editors may separately
           choose to cover a news item; we do not promise it.
         </p>
       </div>
@@ -93,7 +99,8 @@ export default function PressReleasesPage() {
             <div>
               <strong>Distinct From News Reporting:</strong> Press releases are published under the
               “Press Release” category tag with raw corporate attribution. Submission does not imply
-              reporting endorsement, nor does it guarantee follow-up articles by our staff correspondents.
+              reporting endorsement, nor does it guarantee follow-up articles by our staff
+              correspondents.
             </div>
           </div>
         </div>

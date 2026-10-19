@@ -73,7 +73,7 @@ export const STARTUPS_FOUNDERS_ARTICLES: Article[] = [
       },
       {
         title: "Where the numbers come apart",
-        text: "Scope. One tracker may count debt, venture debt, grants or large later-stage cheques that another leaves out. A single big round can move a total by hundreds of millions.\n\nThe definition of \"Indian\". Many startups with Indian founders and Indian customers are legally incorporated abroad. Some trackers count them, some count only entities incorporated in India, and some use a judgement call on where the operations sit.\n\nTiming. A round announced in March, signed in April and reported to the registrar in May can fall into three different quarters depending on whose method you follow.\n\nUndisclosed deals. A large share of early-stage rounds are never publicly announced. Each tracker fills the gaps with its own estimates, and estimates diverge.\n\nNone of this makes either report wrong. It makes both of them partial, which is the honest state of most private-market data.",
+        text: 'Scope. One tracker may count debt, venture debt, grants or large later-stage cheques that another leaves out. A single big round can move a total by hundreds of millions.\n\nThe definition of "Indian". Many startups with Indian founders and Indian customers are legally incorporated abroad. Some trackers count them, some count only entities incorporated in India, and some use a judgement call on where the operations sit.\n\nTiming. A round announced in March, signed in April and reported to the registrar in May can fall into three different quarters depending on whose method you follow.\n\nUndisclosed deals. A large share of early-stage rounds are never publicly announced. Each tracker fills the gaps with its own estimates, and estimates diverge.\n\nNone of this makes either report wrong. It makes both of them partial, which is the honest state of most private-market data.',
       },
       {
         title: "What you can safely take from both",
@@ -96,7 +96,8 @@ export const STARTUPS_FOUNDERS_ARTICLES: Article[] = [
   {
     id: "startup-spotlight-1",
     slug: "five-manufacturing-startups-to-watch-2026",
-    title: "Five Indian Manufacturing Startups to Watch in 2026: From Power Chips to Predictive Maintenance",
+    title:
+      "Five Indian Manufacturing Startups to Watch in 2026: From Power Chips to Predictive Maintenance",
     headline: "The Startups Rewiring the Factory Floor: Five Manufacturing Companies to Watch",
     standfirst:
       "Chips, drones, sensors and scheduling software: a new generation of Indian founders is building for the industrial economy, and the DPIIT numbers show how fast that base is growing.",
@@ -142,7 +143,8 @@ export const STARTUPS_FOUNDERS_ARTICLES: Article[] = [
     status: "published",
     disclosure: "Editorial",
     pullQuote: "Recognition tells us how many founders are building, not how many will scale.",
-    factBox: "Founded: [TBC] · HQ: [TBC] · Stage: [TBC] · Funding: [as disclosed only] · Website: [TBC]",
+    factBox:
+      "Founded: [TBC] · HQ: [TBC] · Stage: [TBC] · Funding: [as disclosed only] · Website: [TBC]",
     sourceNotes: [
       "Inc42, 'Centre Recognises Record 55,200 Startups In FY26', 18 April 2026 (figures above).",
       "Inc42, 'Manufacturing Startups To Watch: 5 Startups That Caught Our Eye In May', 23 May 2026 (company descriptions and founder names).",
@@ -237,7 +239,7 @@ export const STARTUPS_FOUNDERS_ARTICLES: Article[] = [
       },
       {
         title: "Five decisions to settle",
-        text: "1. Hire for the gap that is stopping revenue\nThe temptation is to hire for the work you enjoy delegating. Resist it. List what is slowing you down this quarter: sales calls you cannot take, a product bug that keeps returning, deliveries that run late. The first hire should remove the biggest block to getting paid or shipping, not the one that is merely annoying.\n\n2. Prefer evidence to polish\nInterviews reward people who interview well. Early-stage work rewards people who finish things. A short paid trial project of a few days, built on a real problem, tells you more than three rounds of conversation. It also tells the candidate what working with you is like, which is fair to both sides.\n\n3. Decide the money before the title\nMost startups cannot match large-company salaries, and pretending otherwise damages trust. Be open about the cash you can pay, then be specific about what makes up the difference: equity, ownership of a problem, learning, flexibility. Candidates generally respond better to a clear offer than to a vague promise of upside.\n\n4. Put equity in writing, clearly\nIf you are offering ESOPs, explain the number of options, the vesting schedule, the cliff and what happens if the person leaves or the company is sold. Use a lawyer-reviewed template. Avoid verbal assurances (\"we will take care of you\") that can become disputes later. Tax treatment of ESOPs in India has particular rules, including provisions for eligible startups, so take advice from a chartered accountant before you put numbers in an offer. [EDITOR: do not state tax specifics without a CA's input.]\n\n5. Define the first ninety days\nAgree on three outcomes, a weekly check-in and a date, perhaps day sixty, for an honest review. Early hiring problems grow expensive when feedback is postponed. A short, kind conversation in week six costs far less than an awkward one in month ten.",
+        text: '1. Hire for the gap that is stopping revenue\nThe temptation is to hire for the work you enjoy delegating. Resist it. List what is slowing you down this quarter: sales calls you cannot take, a product bug that keeps returning, deliveries that run late. The first hire should remove the biggest block to getting paid or shipping, not the one that is merely annoying.\n\n2. Prefer evidence to polish\nInterviews reward people who interview well. Early-stage work rewards people who finish things. A short paid trial project of a few days, built on a real problem, tells you more than three rounds of conversation. It also tells the candidate what working with you is like, which is fair to both sides.\n\n3. Decide the money before the title\nMost startups cannot match large-company salaries, and pretending otherwise damages trust. Be open about the cash you can pay, then be specific about what makes up the difference: equity, ownership of a problem, learning, flexibility. Candidates generally respond better to a clear offer than to a vague promise of upside.\n\n4. Put equity in writing, clearly\nIf you are offering ESOPs, explain the number of options, the vesting schedule, the cliff and what happens if the person leaves or the company is sold. Use a lawyer-reviewed template. Avoid verbal assurances ("we will take care of you") that can become disputes later. Tax treatment of ESOPs in India has particular rules, including provisions for eligible startups, so take advice from a chartered accountant before you put numbers in an offer. [EDITOR: do not state tax specifics without a CA\'s input.]\n\n5. Define the first ninety days\nAgree on three outcomes, a weekly check-in and a date, perhaps day sixty, for an honest review. Early hiring problems grow expensive when feedback is postponed. A short, kind conversation in week six costs far less than an awkward one in month ten.',
       },
       {
         title: "The mistakes that cost the most",
@@ -299,7 +301,8 @@ export const STARTUPS_FOUNDERS_ARTICLES: Article[] = [
     region: "in",
     status: "published",
     disclosure: "Editorial",
-    pullQuote: "A product that fails gracefully earns more trust than one that is fast but fragile.",
+    pullQuote:
+      "A product that fails gracefully earns more trust than one that is fast but fragile.",
     sourceNotes: [
       "UPI as an example of public digital infrastructure: NPCI. Add current figures only after verification at npci.org.in.",
     ],
@@ -379,7 +382,8 @@ export const STARTUPS_FOUNDERS_ARTICLES: Article[] = [
     region: "in",
     status: "published",
     disclosure: "Editorial",
-    pullQuote: "Growth does not break the product first. It breaks the habits that worked with ten customers.",
+    pullQuote:
+      "Growth does not break the product first. It breaks the habits that worked with ten customers.",
     sourceNotes: [
       "Framework piece; no statistics. Customer bands are illustrative.",
       "[TO BE CONFIRMED] Optional interview with a scaled-up founder for a pull quote.",

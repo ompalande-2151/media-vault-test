@@ -5,10 +5,13 @@ import { createMetadata } from "@/lib/seo";
 import { AboutNav } from "@/components/magazine/about-nav";
 import { Newsletter } from "@/components/magazine/newsletter";
 
-export const metadata: Metadata = createMetadata(
-  "Our Editorial Standards | MediaVault Global",
-  "How MediaVault Global verifies facts, labels content and separates editorial from sponsored and partner material.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Our Editorial Standards | MediaVault Global",
+  description:
+    "How MediaVault Global verifies facts, labels content and separates editorial from sponsored and partner material.",
+  canonicalPath: "/about/editorial-standards",
+  ogType: "website",
+});
 
 const STANDARDS = [
   {
@@ -47,8 +50,8 @@ export default function EditorialStandardsPage() {
           <span className="eyebrow">Our Mission & Editorial Standards</span>
           <h1>What You Can Expect From Us</h1>
           <p className="mx-auto">
-            MediaVault Global is committed to independent, verified reporting that business
-            leaders and founders can rely upon. Here is our contract with our readers.
+            MediaVault Global is committed to independent, verified reporting that business leaders
+            and founders can rely upon. Here is our contract with our readers.
           </p>
         </div>
 
@@ -93,8 +96,8 @@ export default function EditorialStandardsPage() {
           <section className="prose-page border-t border-border pt-8">
             <h2>Conflicts of Interest & Editorial Separation</h2>
             <p>
-              MediaVault Global maintains an impenetrable wall between our commercial operations
-              and editorial desk. Correspondents, editors, and fact-checkers do not participate in
+              MediaVault Global maintains an impenetrable wall between our commercial operations and
+              editorial desk. Correspondents, editors, and fact-checkers do not participate in
               commercial negotiations, nor do commercial personnel determine journalistic focus.
             </p>
             <p>
@@ -109,11 +112,17 @@ export default function EditorialStandardsPage() {
               immediately.
             </p>
             <div className="flex flex-wrap gap-4 mt-6">
-              <Link href="/about/contact" className="btn-primary inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded bg-primary text-primary-foreground">
+              <Link
+                href="/about/contact"
+                className="btn-primary inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded bg-primary text-primary-foreground"
+              >
                 Contact the Corrections Desk
                 <ArrowUpRight size={16} />
               </Link>
-              <Link href="/corrections" className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded border border-border hover:bg-muted transition-colors">
+              <Link
+                href="/corrections"
+                className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded border border-border hover:bg-muted transition-colors"
+              >
                 View Public Corrections Log
                 <ArrowUpRight size={16} />
               </Link>

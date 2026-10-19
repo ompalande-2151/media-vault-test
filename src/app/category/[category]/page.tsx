@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getCategory, getCategories } from "@/lib/queries";
-import { createMetadata } from "@/lib/seo";
+import { createMetadata, createNotFoundMetadata } from "@/lib/seo";
+import { getBreadcrumbJsonLd, getCollectionPageJsonLd, safeJsonLd } from "@/lib/structured-data";
 import { CategoryPage } from "@/components/magazine/category-page";
 
 export async function generateStaticParams() {
@@ -15,12 +16,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { category: catSlug } = await params;
   const category = getCategory(catSlug);
-  if (!category)
-    return createMetadata(
-      "Section unavailable",
-      "Explore MediaVault Global business perspectives.",
-    );
-  return createMetadata(category.name, category.intro);
+  if (!category) {
+    return createNotFoundMetadata("Section Unavailable");
+  }
+  return createMetadata({
+    title: `${category.name} | MediaVault Global`,
+    description: category.intro,
+    canonicalPath: `/category/${category.slug}`,
+    ogType: "website",
+    keywords: [category.name, ...category.subs, "India business", "enterprise reporting"],
+  });
 }
 
 export default async function CategoryIndexPage({
@@ -32,5 +37,28 @@ export default async function CategoryIndexPage({
   const category = getCategory(catSlug);
   if (!category) notFound();
 
-  return <CategoryPage category={category} />;
+  const breadcrumbs = [
+    { name: "Home", path: "/" },
+    { name: category.name, path: `/category/${category.slug}` },
+  ];
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeJsonLd(
+            getCollectionPageJsonLd(category.name, category.intro, `/category/${category.slug}`),
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeJsonLd(getBreadcrumbJsonLd(breadcrumbs)),
+        }}
+      />
+      <CategoryPage category={category} />
+    </>
+  );
 }

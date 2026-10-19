@@ -6,10 +6,13 @@ import { AboutNav } from "@/components/magazine/about-nav";
 import { DeskContactForm } from "@/components/magazine/desk-contact-form";
 import { Newsletter } from "@/components/magazine/newsletter";
 
-export const metadata: Metadata = createMetadata(
-  "Contact MediaVault Global",
-  "Reach the MediaVault Global editorial desk, partnerships team, corrections desk and press contacts.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Contact MediaVault Global",
+  description:
+    "Reach the MediaVault Global editorial desk, partnerships team, corrections desk and press contacts.",
+  canonicalPath: "/about/contact",
+  ogType: "website",
+});
 
 const DIRECT_DESKS = [
   {
@@ -89,9 +92,9 @@ export default function AboutContactPage() {
             <div className="publisher-notice">
               <AlertCircle size={18} className="text-primary shrink-0 mt-0.5" />
               <div>
-                <strong>Confirmation Status:</strong> Primary email forwarding addresses are
-                under publisher DNS configuration. Submitted messages via the secure desk form
-                will be stored and acknowledged.
+                <strong>Confirmation Status:</strong> Primary email forwarding addresses are under
+                publisher DNS configuration. Submitted messages via the secure desk form will be
+                stored and acknowledged.
               </div>
             </div>
           </div>

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getCategory, getCategories, subSlug } from "@/lib/queries";
-import { createMetadata } from "@/lib/seo";
+import { createMetadata, createNotFoundMetadata } from "@/lib/seo";
+import { getBreadcrumbJsonLd, getCollectionPageJsonLd, safeJsonLd } from "@/lib/structured-data";
 import { CategoryPage } from "@/components/magazine/category-page";
 
 export async function generateStaticParams() {
@@ -28,9 +29,19 @@ export async function generateMetadata({
   const selected = category?.subs.find(
     (s) => subSlug(s) === subSlugParam || subSlug(s).replace("-and-", "-") === subSlugParam,
   );
-  if (!category || !selected)
-    return createMetadata("Section unavailable", "Explore more perspectives.");
-  return createMetadata(selected, `${selected}: ${category.intro}`);
+  if (!category || !selected) {
+    return createNotFoundMetadata("Section Unavailable");
+  }
+
+  const canonicalSubSlug = subSlug(selected);
+
+  return createMetadata({
+    title: `${selected} | ${category.name} | MediaVault Global`,
+    description: `${selected} insights, analysis and reports across ${category.name.toLowerCase()} in India.`,
+    canonicalPath: `/category/${category.slug}/${canonicalSubSlug}`,
+    ogType: "website",
+    keywords: [selected, category.name, "Indian business", "industry reporting"],
+  });
 }
 
 export default async function SubcategoryPage({
@@ -45,5 +56,34 @@ export default async function SubcategoryPage({
   );
   if (!category || !selected) notFound();
 
-  return <CategoryPage category={category} selected={selected} />;
+  const canonicalSubSlug = subSlug(selected);
+  const breadcrumbs = [
+    { name: "Home", path: "/" },
+    { name: category.name, path: `/category/${category.slug}` },
+    { name: selected, path: `/category/${category.slug}/${canonicalSubSlug}` },
+  ];
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeJsonLd(
+            getCollectionPageJsonLd(
+              `${selected} — ${category.name}`,
+              `${selected}: ${category.intro}`,
+              `/category/${category.slug}/${canonicalSubSlug}`,
+            ),
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeJsonLd(getBreadcrumbJsonLd(breadcrumbs)),
+        }}
+      />
+      <CategoryPage category={category} selected={selected} />
+    </>
+  );
 }

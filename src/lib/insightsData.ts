@@ -12,8 +12,7 @@ export const INSIGHTS_ARTICLES: Article[] = [
   {
     id: "ins-analysis-1",
     slug: "india-industrial-corridors-land-deals-to-ecosystems",
-    title:
-      "Why India's Industrial Corridors Are Moving From Land Deals to Ecosystems",
+    title: "Why India's Industrial Corridors Are Moving From Land Deals to Ecosystems",
     headline: "The Plot Is No Longer the Product",
     standfirst:
       "State industrial bodies from MIDC to SIPCOT are shifting from selling plots to building plug-and-play ecosystems. What changes for investors and MSMEs.",
@@ -24,8 +23,7 @@ export const INSIGHTS_ARTICLES: Article[] = [
     metaDescription:
       "State industrial bodies from MIDC to SIPCOT are shifting from selling plots to building plug-and-play ecosystems. What changes for investors and MSMEs.",
     series: "Sector Shift",
-    customHref:
-      "/insights/analysis/india-industrial-corridors-land-deals-to-ecosystems",
+    customHref: "/insights/analysis/india-industrial-corridors-land-deals-to-ecosystems",
     category: "insights",
     subcategory: "Analysis",
     image: "/insights/ANALYSIS.webp",
@@ -97,14 +95,12 @@ export const INSIGHTS_ARTICLES: Article[] = [
     metaDescription:
       "How to register on Udyam, what documents you need, what benefits follow, and the common mistakes to avoid. A simple checklist for small business owners.",
     series: "The Practical Brief",
-    customHref:
-      "/insights/practical-guides/udyam-registration-step-by-step-guide-msme",
+    customHref: "/insights/practical-guides/udyam-registration-step-by-step-guide-msme",
     category: "insights",
     subcategory: "Practical Guides",
     image: "/insights/PRACTICAL GUIDES.webp",
     alt: "Small business owner at a laptop on the Udyam portal in a shop office",
-    imagePrompt:
-      "Small business owner at a laptop on the Udyam portal in a shop office, 16:9.",
+    imagePrompt: "Small business owner at a laptop on the Udyam portal in a shop office, 16:9.",
     author: "the-editorial-desk",
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",
@@ -155,8 +151,7 @@ export const INSIGHTS_ARTICLES: Article[] = [
   {
     id: "ins-opinion-1",
     slug: "india-msmes-need-faster-payments-not-more-schemes",
-    title:
-      "Opinion: India's MSMEs Don't Need More Schemes. They Need Faster Payments.",
+    title: "Opinion: India's MSMEs Don't Need More Schemes. They Need Faster Payments.",
     headline: "Pay Your Suppliers. It Is the Cheapest Policy India Has.",
     standfirst:
       "An opinion on why on-time payment, not more subsidy schemes, would do the most for India's small manufacturers.",
@@ -167,30 +162,18 @@ export const INSIGHTS_ARTICLES: Article[] = [
     metaDescription:
       "An opinion on why on-time payment, not more subsidy schemes, would do the most for India's small manufacturers.",
     series: "CEO Perspective / Opinion",
-    customHref:
-      "/insights/opinion/india-msmes-need-faster-payments-not-more-schemes",
+    customHref: "/insights/opinion/india-msmes-need-faster-payments-not-more-schemes",
     category: "insights",
     subcategory: "Opinion",
     image: "/insights/OPINION.webp",
     alt: "Stack of unpaid invoices on a small business desk beside a calendar",
-    imagePrompt:
-      "Stack of unpaid invoices on a small business desk beside a calendar, 16:9.",
+    imagePrompt: "Stack of unpaid invoices on a small business desk beside a calendar, 16:9.",
     author: "the-editorial-desk",
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",
     readingTime: 5,
-    tags: [
-      "MSME opinion",
-      "Delayed payments India",
-      "MSME policy",
-      "Payment discipline",
-    ],
-    keywords: [
-      "MSME opinion",
-      "delayed payments India",
-      "MSME policy",
-      "payment discipline",
-    ],
+    tags: ["MSME opinion", "Delayed payments India", "MSME policy", "Payment discipline"],
+    keywords: ["MSME opinion", "delayed payments India", "MSME policy", "payment discipline"],
     region: "in",
     status: "published",
     disclosure: "Opinion",
@@ -223,8 +206,7 @@ export const INSIGHTS_ARTICLES: Article[] = [
   {
     id: "ins-research-reports-1",
     slug: "state-of-india-msmes-in-numbers",
-    title:
-      "The State of India's MSMEs in Numbers: Output, Exports and Employment",
+    title: "The State of India's MSMEs in Numbers: Output, Exports and Employment",
     headline: "Reading the Numbers on India's Small Businesses",
     standfirst:
       "A reader's guide to the main numbers on India's MSME sector, what they measure, where they come from and how to use them without misreading them.",
@@ -235,8 +217,7 @@ export const INSIGHTS_ARTICLES: Article[] = [
     metaDescription:
       "A reader's guide to the main numbers on India's MSME sector, what they measure, where they come from and how to use them without misreading them.",
     series: "Explained",
-    customHref:
-      "/insights/research-reports/state-of-india-msmes-in-numbers",
+    customHref: "/insights/research-reports/state-of-india-msmes-in-numbers",
     category: "insights",
     subcategory: "Research & Reports",
     image: "/insights/RESEARCH & REPORTS.webp",
@@ -293,10 +274,8 @@ export const INSIGHTS_ARTICLES: Article[] = [
   {
     id: "ins-case-studies-1",
     slug: "how-treds-grew-40000-crore-to-3-47-lakh-crore",
-    title:
-      "Case Study: How TReDS Grew From ₹40,000 Crore to ₹3.47 Lakh Crore",
-    headline:
-      "From Pilot to Plumbing: The Making of an MSME Finance Platform",
+    title: "Case Study: How TReDS Grew From ₹40,000 Crore to ₹3.47 Lakh Crore",
+    headline: "From Pilot to Plumbing: The Making of an MSME Finance Platform",
     standfirst:
       "A case study of how an invoice-discounting platform became mainstream for Indian MSMEs: regulation, anchor buyers and policy nudges.",
     summary:
@@ -306,8 +285,7 @@ export const INSIGHTS_ARTICLES: Article[] = [
     metaDescription:
       "A case study of how an invoice-discounting platform became mainstream for Indian MSMEs: regulation, anchor buyers and policy nudges.",
     series: "Inside the Enterprise",
-    customHref:
-      "/insights/case-studies/how-treds-grew-40000-crore-to-3-47-lakh-crore",
+    customHref: "/insights/case-studies/how-treds-grew-40000-crore-to-3-47-lakh-crore",
     category: "insights",
     subcategory: "Case Studies",
     image: "/insights/CASE STUDIES.webp",
@@ -318,18 +296,8 @@ export const INSIGHTS_ARTICLES: Article[] = [
     date: "October 14, 2026",
     publishedAt: "2026-10-14T08:00:00+05:30",
     readingTime: 5,
-    tags: [
-      "TReDS case study",
-      "Invoice discounting India",
-      "RBI platform",
-      "MSME finance",
-    ],
-    keywords: [
-      "TReDS case study",
-      "invoice discounting India",
-      "RBI platform",
-      "MSME finance",
-    ],
+    tags: ["TReDS case study", "Invoice discounting India", "RBI platform", "MSME finance"],
+    keywords: ["TReDS case study", "invoice discounting India", "RBI platform", "MSME finance"],
     region: "in",
     status: "published",
     disclosure: "Editorial",

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { HeroStoryItem } from "@/lib/queries";
+import { getArticleCanonicalPath } from "@/lib/seo";
 
 interface HeroCoverStoryProps {
   items: HeroStoryItem[];
@@ -28,14 +29,10 @@ export function HeroCoverStory({ items, intervalMs = 5000 }: HeroCoverStoryProps
   if (!items || items.length === 0) return null;
 
   const current = items[activeIndex] || items[0];
-  const targetHref =
-    current.article.customHref || `/article/${current.article.slug}`;
+  const targetHref = getArticleCanonicalPath(current.article);
 
   return (
-    <article
-      className="cover-story"
-      aria-label="Featured section cover stories"
-    >
+    <article className="cover-story" aria-label="Featured section cover stories">
       {/* Background Images with smooth crossfade */}
       {items.map((item, idx) => {
         const isActive = idx === activeIndex;
@@ -66,7 +63,10 @@ export function HeroCoverStory({ items, intervalMs = 5000 }: HeroCoverStoryProps
 
         <div className="cover-meta">
           <span>
-            By {current.article.author === "the-editorial-desk" ? "the Editorial Desk" : current.article.author}
+            By{" "}
+            {current.article.author === "the-editorial-desk"
+              ? "the Editorial Desk"
+              : current.article.author}
           </span>
         </div>
 

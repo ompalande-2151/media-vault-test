@@ -5,31 +5,37 @@ import { createMetadata } from "@/lib/seo";
 import { AboutNav } from "@/components/magazine/about-nav";
 import { Newsletter } from "@/components/magazine/newsletter";
 
-export const metadata: Metadata = createMetadata(
-  "The MediaVault Global Team",
-  "The journalists, editors, and producers behind MediaVault Global.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "The MediaVault Global Team",
+  description: "The journalists, editors, and producers behind MediaVault Global.",
+  canonicalPath: "/about/team",
+  ogType: "website",
+});
 
 const MASTHEAD_ROLES = [
   {
     role: "Founder & Editor-in-Chief",
     department: "Executive Leadership",
-    scope: "Editorial vision, overall journalistic integrity, governance, and publication strategy.",
+    scope:
+      "Editorial vision, overall journalistic integrity, governance, and publication strategy.",
   },
   {
     role: "Managing Editor",
     department: "Newsroom Management",
-    scope: "Day-to-day newsroom operations, copy flow, cross-desk coordination, and standards enforcement.",
+    scope:
+      "Day-to-day newsroom operations, copy flow, cross-desk coordination, and standards enforcement.",
   },
   {
     role: "Senior Correspondent (Enterprise)",
     department: "Reporting Desk",
-    scope: "Deep investigative reporting across corporate boardrooms, manufacturing, and policy shifts.",
+    scope:
+      "Deep investigative reporting across corporate boardrooms, manufacturing, and policy shifts.",
   },
   {
     role: "Video Producer",
     department: "Multimedia & CEO Voice",
-    scope: "Audio-visual series production, long-form executive interviews, and digital storytelling.",
+    scope:
+      "Audio-visual series production, long-form executive interviews, and digital storytelling.",
   },
   {
     role: "Partnerships Lead",
@@ -39,7 +45,8 @@ const MASTHEAD_ROLES = [
   {
     role: "Design Lead",
     department: "Art & Brand Identity",
-    scope: "Visual journalism, typography, responsive digital reading experiences, and print layout.",
+    scope:
+      "Visual journalism, typography, responsive digital reading experiences, and print layout.",
   },
 ];
 
@@ -63,10 +70,10 @@ export default function TeamPage() {
           <div className="publisher-notice">
             <AlertCircle className="text-primary shrink-0 mt-0.5" size={18} />
             <div>
-              <strong>Publisher Masthead Notice:</strong> [FOUNDER TO CONFIRM names and bios. Do
-              not publish placeholder profiles.] In accordance with our editorial standards against
-              fictional journalist identities, confirmed staff bios, headshots, and verified LinkedIn
-              profiles will be published upon launch approval.
+              <strong>Publisher Masthead Notice:</strong> [FOUNDER TO CONFIRM names and bios. Do not
+              publish placeholder profiles.] In accordance with our editorial standards against
+              fictional journalist identities, confirmed staff bios, headshots, and verified
+              LinkedIn profiles will be published upon launch approval.
             </div>
           </div>
 
@@ -75,7 +82,8 @@ export default function TeamPage() {
               <span className="eyebrow">Newsroom Architecture</span>
               <h2 className="text-2xl font-serif mt-1">Editorial Masthead & Desks</h2>
               <p className="text-muted-foreground text-sm mt-1">
-                Our organization is structured across specialized desks to ensure deep sector expertise:
+                Our organization is structured across specialized desks to ensure deep sector
+                expertise:
               </p>
             </div>
 
@@ -98,8 +106,8 @@ export default function TeamPage() {
           <section className="p-8 border border-border rounded-[var(--radius)] bg-card space-y-4">
             <h3 className="font-serif text-2xl">Connect with our Editorial Desk</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Have a pitch, an executive leak, or an operational query? Reach our editors
-              or explore contributing your expertise as an independent writer.
+              Have a pitch, an executive leak, or an operational query? Reach our editors or explore
+              contributing your expertise as an independent writer.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Link

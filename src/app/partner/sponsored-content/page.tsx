@@ -5,10 +5,13 @@ import { createMetadata } from "@/lib/seo";
 import { PartnerNav } from "@/components/magazine/partner-nav";
 import { EnquiryForm } from "@/components/magazine/enquiry-form";
 
-export const metadata: Metadata = createMetadata(
-  "Sponsored and Partner Content | MediaVault Global",
-  "Transparent, clearly labelled brand storytelling and sponsored content co-created with MediaVault Global.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Sponsored and Partner Content | MediaVault Global",
+  description:
+    "Transparent, clearly labelled brand storytelling and sponsored content co-created with MediaVault Global.",
+  canonicalPath: "/partner/sponsored-content",
+  ogType: "website",
+});
 
 const PROCESS_STEPS = [
   {
@@ -40,9 +43,9 @@ export default function SponsoredContentPage() {
         <span className="eyebrow">Brand Narratives</span>
         <h1>Your Story, Clearly Labelled</h1>
         <p className="mx-auto">
-          We write or co-create content for brands. Each piece carries a Sponsored or Partner
-          label. We fact-check claims and may decline material that is misleading. Partner content
-          is separate from our editorial coverage and does not imply editorial endorsement.
+          We write or co-create content for brands. Each piece carries a Sponsored or Partner label.
+          We fact-check claims and may decline material that is misleading. Partner content is
+          separate from our editorial coverage and does not imply editorial endorsement.
         </p>
       </div>
 
@@ -113,7 +116,10 @@ export default function SponsoredContentPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {PROCESS_STEPS.map((s) => (
-                <div key={s.step} className="p-4 border border-border rounded-[var(--radius)] bg-card space-y-1.5">
+                <div
+                  key={s.step}
+                  className="p-4 border border-border rounded-[var(--radius)] bg-card space-y-1.5"
+                >
                   <span className="text-xs font-mono font-semibold text-primary">{s.step}</span>
                   <h3 className="font-serif text-base font-medium">{s.title}</h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
@@ -139,8 +145,8 @@ export default function SponsoredContentPage() {
             <span className="eyebrow">Inquire About Sponsored Features</span>
             <h2 className="text-2xl font-serif mt-1">Book a Brand Story</h2>
             <p className="text-xs text-muted-foreground mt-1">
-              Submit your objectives and campaign timeline. Our partnerships team will respond
-              with scheduling options and editorial availability.
+              Submit your objectives and campaign timeline. Our partnerships team will respond with
+              scheduling options and editorial availability.
             </p>
           </div>
           <EnquiryForm kind="partner" />

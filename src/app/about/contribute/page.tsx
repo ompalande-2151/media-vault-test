@@ -1,14 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, CheckCircle2, XCircle, FileText, Send, UserCheck, ShieldCheck } from "lucide-react";
+import {
+  ArrowUpRight,
+  CheckCircle2,
+  XCircle,
+  FileText,
+  Send,
+  UserCheck,
+  ShieldCheck,
+} from "lucide-react";
 import { createMetadata } from "@/lib/seo";
 import { AboutNav } from "@/components/magazine/about-nav";
 import { Newsletter } from "@/components/magazine/newsletter";
 
-export const metadata: Metadata = createMetadata(
-  "Write for MediaVault Global",
-  "Contribute expert perspectives, founder insights, and operational analysis to MediaVault Global.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Write for MediaVault Global",
+  description:
+    "Contribute expert perspectives, founder insights, and operational analysis to MediaVault Global.",
+  canonicalPath: "/about/contribute",
+  ogType: "website",
+});
 
 const GUIDELINES = [
   {
@@ -43,8 +54,8 @@ export default function ContributePage() {
           <p className="mx-auto">
             We welcome expert contributors: owners, CXOs, founders, economists and practitioners.
             Share a pitch of 100 words, your credentials and a link to previous writing.
-            Contributions are edited, fact-checked and labelled as opinion where appropriate.
-            We do not publish paid-for pieces as editorial.
+            Contributions are edited, fact-checked and labelled as opinion where appropriate. We do
+            not publish paid-for pieces as editorial.
           </p>
         </div>
 
@@ -60,7 +71,10 @@ export default function ContributePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {GUIDELINES.map((g) => (
-                <div key={g.step} className="p-6 border border-border rounded-[var(--radius)] bg-card space-y-2">
+                <div
+                  key={g.step}
+                  className="p-6 border border-border rounded-[var(--radius)] bg-card space-y-2"
+                >
                   <span className="text-xs font-mono font-semibold text-primary">{g.step}</span>
                   <h3 className="font-serif text-lg font-medium">{g.title}</h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">{g.desc}</p>
@@ -108,11 +122,15 @@ export default function ContributePage() {
                   </li>
                   <li>
                     <XCircle size={16} className="text-destructive shrink-0 mt-0.5" />
-                    <span>Ghostwritten corporate PR pieces without authentic practitioner voice</span>
+                    <span>
+                      Ghostwritten corporate PR pieces without authentic practitioner voice
+                    </span>
                   </li>
                   <li>
                     <XCircle size={16} className="text-destructive shrink-0 mt-0.5" />
-                    <span>Generic, surface-level commentary synthesized without domain experience</span>
+                    <span>
+                      Generic, surface-level commentary synthesized without domain experience
+                    </span>
                   </li>
                   <li>
                     <XCircle size={16} className="text-destructive shrink-0 mt-0.5" />
@@ -128,8 +146,8 @@ export default function ContributePage() {
             <span className="eyebrow">Ready to Pitch?</span>
             <h3 className="font-serif text-3xl">Send Your Proposal to Our Editors</h3>
             <p className="text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              Have your 100-word pitch, credentials, and published links ready. Our editorial
-              desk reviews unsolicited pitches on a rolling weekly schedule.
+              Have your 100-word pitch, credentials, and published links ready. Our editorial desk
+              reviews unsolicited pitches on a rolling weekly schedule.
             </p>
             <div className="pt-2 flex flex-wrap justify-center gap-4">
               <Link

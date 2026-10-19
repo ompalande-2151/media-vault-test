@@ -5,10 +5,13 @@ import { createMetadata } from "@/lib/seo";
 import { PartnerNav } from "@/components/magazine/partner-nav";
 import { EnquiryForm } from "@/components/magazine/enquiry-form";
 
-export const metadata: Metadata = createMetadata(
-  "Partner With MediaVault Global",
-  "Reach India's business decision-makers through clearly labelled partner content, events, video and advertising with MediaVault Global.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Partner With MediaVault Global",
+  description:
+    "Reach India's business decision-makers through clearly labelled partner content, events, video and advertising with MediaVault Global.",
+  canonicalPath: "/partner",
+  ogType: "website",
+});
 
 const FORMATS = [
   {
@@ -56,8 +59,8 @@ export default function PartnerOverviewPage() {
         <span className="eyebrow">Commercial Alliances & Sponsorships</span>
         <h1>Reach the People Who Run Indian Business</h1>
         <p className="mx-auto">
-          Our readers are owners, CXOs, founders and policymakers. Work with us through
-          clearly labelled formats that respect them. Audience figures shown are verified only.
+          Our readers are owners, CXOs, founders and policymakers. Work with us through clearly
+          labelled formats that respect them. Audience figures shown are verified only.
         </p>
       </div>
 
@@ -109,8 +112,8 @@ export default function PartnerOverviewPage() {
           <div className="p-6 border border-border rounded-[var(--radius)] bg-muted/40 space-y-3">
             <h3 className="font-serif text-lg font-medium">Our Commercial Separation Guarantee</h3>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              Every piece of partner content carries clear identification. We fact-check claims
-              and protect reader trust above all commercial arrangements.
+              Every piece of partner content carries clear identification. We fact-check claims and
+              protect reader trust above all commercial arrangements.
             </p>
           </div>
         </div>

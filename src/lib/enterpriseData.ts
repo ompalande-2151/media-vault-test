@@ -254,8 +254,7 @@ export const ENTERPRISE_ARTICLES: Article[] = [
     metaDescription:
       "Noida built its reputation as India's electronics assembly hub. With the HCL-Foxconn semiconductor project and Jewar airport underway, Uttar Pradesh is now betting on a bigger second act.",
     series: "Inside the Enterprise",
-    customHref:
-      "/enterprise/noida-greater-noida-yamuna-expressway-electronics-semiconductor-up",
+    customHref: "/enterprise/noida-greater-noida-yamuna-expressway-electronics-semiconductor-up",
     category: "enterprise",
     subcategory: "Digital Transformation",
     image: "/enterprise/NoidaS_Second_Act.jpg",

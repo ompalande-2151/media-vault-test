@@ -4,10 +4,13 @@ import { createMetadata } from "@/lib/seo";
 import { PartnerNav } from "@/components/magazine/partner-nav";
 import { EnquiryForm } from "@/components/magazine/enquiry-form";
 
-export const metadata: Metadata = createMetadata(
-  "Advertise With MediaVault Global",
-  "High-impact display banners, section sponsorships, newsletter sponsorships, and video pre-rolls.",
-);
+export const metadata: Metadata = createMetadata({
+  title: "Advertise With MediaVault Global",
+  description:
+    "High-impact display banners, section sponsorships, newsletter sponsorships, and video pre-rolls.",
+  canonicalPath: "/partner/advertise",
+  ogType: "website",
+});
 
 const AD_CHANNELS = [
   {
@@ -47,9 +50,9 @@ export default function AdvertisePage() {
         <span className="eyebrow">Advertising Placements & Sponsorships</span>
         <h1>Display, Newsletter and Video Placements</h1>
         <p className="mx-auto">
-          Position your organization in front of India’s economic builders. Options:
-          homepage banner, section sponsorship, newsletter sponsorship, pre-roll on video.
-          Media kit available on request. Ads are labelled and separated from editorial content.
+          Position your organization in front of India’s economic builders. Options: homepage
+          banner, section sponsorship, newsletter sponsorship, pre-roll on video. Media kit
+          available on request. Ads are labelled and separated from editorial content.
         </p>
       </div>
 
@@ -62,8 +65,8 @@ export default function AdvertisePage() {
             <AlertCircle size={18} className="text-primary shrink-0 mt-0.5" />
             <div>
               <strong>Rate Card Notice:</strong> [FOUNDER TO CONFIRM rates and verified audience
-              figures.] Rate cards, circulation benchmarks, and ad inventory schedules are
-              provided upon direct request to verified agency or corporate partners.
+              figures.] Rate cards, circulation benchmarks, and ad inventory schedules are provided
+              upon direct request to verified agency or corporate partners.
             </div>
           </div>
 
@@ -103,9 +106,9 @@ export default function AdvertisePage() {
           <div className="p-6 border border-border rounded-[var(--radius)] bg-card space-y-3">
             <h3 className="font-serif text-lg font-medium">Standards of Separation</h3>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              In accordance with MediaVault Global guidelines, all advertisements are
-              unambiguously designated as “Advertisement” or “Sponsored”. Creative assets that mimic
-              newsroom editorial layout or contain unsubstantiated claims will not be accepted.
+              In accordance with MediaVault Global guidelines, all advertisements are unambiguously
+              designated as “Advertisement” or “Sponsored”. Creative assets that mimic newsroom
+              editorial layout or contain unsubstantiated claims will not be accepted.
             </p>
           </div>
         </div>
